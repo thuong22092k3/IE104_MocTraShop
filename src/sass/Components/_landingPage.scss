@@ -1,0 +1,35 @@
+.landingPage{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    
+    .container{
+        max-width: 550px;
+    }
+    &__h1{
+        margin-bottom: 30px;
+    }
+    &__p{
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    &__btn{
+        background-color: $bg-btn;
+        color: $txt-white;
+        width: 263px;
+        height: 56px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+    &__btn:hover{
+        background-color: $txt-white;
+        color: $txt-main-color;
+    }
+    &__btn:active{
+        background-color: $bg-btn;
+        color: $txt-white;
+    }
+}
+

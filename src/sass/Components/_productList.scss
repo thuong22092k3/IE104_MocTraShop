@@ -1,0 +1,33 @@
+.cards {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+
+    .partner__h1 {
+        font-weight: 400;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .card {
+            flex: 0 1 calc(33.33% - 10px);
+            /* 33.33% width with 10px gap */
+            padding: 10px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            p {
+                font-size: 16px;
+                margin-top: 15px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

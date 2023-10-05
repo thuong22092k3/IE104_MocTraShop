@@ -1,0 +1,32 @@
+.partner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    .container{
+        max-width: 406px;
+    }
+    &__h1{
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__btn{
+        background-color: $txt-white;
+        color: $txt-main-color;
+        width: 360px;
+        height: 56px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    &__btn:hover{
+        background-color: $bg-btn;
+        color: $txt-white;
+    }
+    &__btn:active{
+        background-color: $txt-white;
+        color: $txt-main-color;
+    }
+}

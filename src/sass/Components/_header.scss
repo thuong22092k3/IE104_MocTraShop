@@ -1,0 +1,68 @@
+/* Header.scss */
+// @import '../variables';
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    max-height: 108px;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-weight: 500;
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+    }
+
+    .navbar {
+      ul {
+        list-style: none;
+        display: flex;
+
+        li {
+          margin-right: 40px;
+          font-weight: 500;
+
+          a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+
+            &:hover {
+              color: $hover-color;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    .icons {
+      display: flex;
+
+      .search-icon,
+      .account-icon,
+      .cart-icon {
+        margin-left: 30px;
+
+        a {
+          text-decoration: none;
+          color: $txt-main-color;
+
+          &:hover {
+            color: $hover-color;
+          }
+        }
+      }
+    }
+  }
+}

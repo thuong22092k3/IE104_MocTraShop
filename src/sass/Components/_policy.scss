@@ -1,0 +1,21 @@
+.policy {
+    background-color: $bg-footer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 116px;
+    margin: 80px 30px;
+    color: $txt-main-color;
+    font-weight: 500;
+
+    &__elements {
+        display: flex;
+        align-items: center;
+
+        p {
+            padding-left: 10px;
+        }
+    }
+
+
+}
