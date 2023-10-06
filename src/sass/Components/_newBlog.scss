@@ -14,8 +14,9 @@
     }
 
     &__content {
-        display: flex;
+        display: flex !important;
         flex-direction: row;
+        padding-right: 30px;
         align-items: start;
         flex-grow: 1;
 
@@ -63,5 +64,10 @@
         color: $txt-second-color;
     }
 }
+.slick-prev::before {
+    color: $bg-btn;
+}
 
-/* Định dạng cho các chấm (dots) */
+.slick-next::before {
+    color: $bg-btn;
+}
