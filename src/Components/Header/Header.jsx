@@ -21,7 +21,7 @@ const Header = () => {
                             <Link to="/blog">BLOG</Link>
                         </li>
                         <li>
-                            <Link to="/contact">LIÊN HỆ</Link>
+                            <a href='/Contact'>LIÊN HỆ</a>
                         </li>
                     </ul>
                 </nav>

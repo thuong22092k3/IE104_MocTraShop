@@ -1,0 +1,40 @@
+
+.contact__content__header{
+    text-align: center;
+    align-items: center;
+}
+.contact__content__main{
+    padding-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+input{
+    width: 533.52px;
+    height: 75px;
+    border-radius: 5px;
+}
+textarea{
+    width: 533.52px;
+    height: 120px;
+    border-radius: 5px;
+}
+.button{
+    padding-top: 40px;
+}
+#button_Gui{
+    width: 137px;
+    height: 55px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+
+}
+.contact__content{
+    display: block;
+    margin: 0 auto;
+    width: 770px;
+    height: 1000px;
+    margin-top: 50px;
+}
