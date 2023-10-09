@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 // import '../../sass/Components/Header.scss'; // Import file SCSS
-import { BagIcon, SearchIcon, AccountIcon} from '../Icons/index.jsx';
+import { BagIcon, SearchIcon, AccountIcon } from '../Icons/index.jsx';
 const Header = () => {
     return (
         <header className="header">
@@ -21,24 +21,24 @@ const Header = () => {
                             <Link to="/blog">BLOG</Link>
                         </li>
                         <li>
-                            <a href='/Contact'>LIÊN HỆ</a>
+                            <Link to="/Contact">LIÊN HỆ</Link>
                         </li>
                     </ul>
                 </nav>
                 <div className="icons">
                     <div className="search-icon">
                         <Link to="/search">
-                            <SearchIcon/>
+                            <SearchIcon />
                         </Link>
                     </div>
                     <div className="account-icon">
                         <Link to="/account">
-                            <AccountIcon/>
+                            <AccountIcon />
                         </Link>
                     </div>
                     <div className="cart-icon">
                         <Link to="/cart">
-                            <BagIcon/>
+                            <BagIcon />
                         </Link>
                     </div>
                 </div>
