@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact__content = () => {
+const Contact_Content = () => {
     return (
         <div className="contact">
             <div class="contact__content__header">
@@ -48,4 +48,4 @@ const Contact__content = () => {
     )
 }
 
-export default Contact_content
+export default Contact_Content
