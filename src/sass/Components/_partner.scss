@@ -1,18 +1,21 @@
-.partner{
+.partner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: space-around;
     margin-bottom: 100px;
-    .container{
+
+    .container {
         max-width: 406px;
     }
-    &__h1{
+
+    &__h1 {
         font-size: 36px;
         font-weight: 600;
         margin-bottom: 30px;
     }
-    &__btn{
+
+    &__btn {
         background-color: $txt-white;
         color: $txt-main-color;
         width: 360px;
@@ -21,12 +24,28 @@
         cursor: pointer;
     }
 
-    &__btn:hover{
+    &__btn:hover {
         background-color: $bg-btn;
         color: $txt-white;
     }
-    &__btn:active{
+
+    &__btn:active {
         background-color: $txt-white;
         color: $txt-main-color;
+    }
+
+    @media screen and (max-width: 768px) {
+        img {
+            margin-bottom: 0;
+            display: none;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0px;
+        }
     }
 }

@@ -1,21 +1,24 @@
-.landingPage{
+.landingPage {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
     justify-content: space-around;
-    
-    .container{
+
+    .container {
         max-width: 550px;
     }
-    &__h1{
+
+    &__h1 {
         margin-bottom: 30px;
     }
-    &__p{
+
+    &__p {
         margin-bottom: 30px;
         line-height: 1.5;
     }
-    &__btn{
+
+    &__btn {
         background-color: $bg-btn;
         color: $txt-white;
         width: 263px;
@@ -23,13 +26,31 @@
         font-size: 14px;
         cursor: pointer;
     }
-    &__btn:hover{
+
+    &__btn:hover {
         background-color: $txt-white;
         color: $txt-main-color;
     }
-    &__btn:active{
+
+    &__btn:active {
         background-color: $bg-btn;
         color: $txt-white;
     }
-}
 
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    @media screen and (max-width: 768px) {
+        img {
+            margin-bottom: 0;
+            display: none;
+            // Giảm khoảng cách giữa ảnh và container khi màn hình nhỏ hơn 768px
+        }
+
+        .landingPage__btn {
+            margin: 0 110px;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Hong_Tra from '../../assets/Images/Hong_Tra.jpg'
 import Tra_Xanh from '../../assets/Images/Tra_Xanh.jpg'
 import Bach_Tra from '../../assets/Images/Bach_Tra.jpg'
@@ -37,10 +38,12 @@ const ProductList = () => {
             {rows.map((row, rowIndex) => (
                 <div className="row" key={rowIndex}>
                     {row.map((product) => (
+                        <Link to="/collections">
                         <div className="card" key={product.id}>
                             <img src={product.imageUrl} alt={product.name} />
-                            <p>{product.name}</p>
+                            <div className='card__title'>{product.name}</div>
                         </div>
+                    </Link>
                     ))}
                 </div>
             ))}

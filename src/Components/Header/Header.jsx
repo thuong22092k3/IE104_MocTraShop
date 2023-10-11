@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useState }from 'react';
 import { Link } from 'react-router-dom';
-// import '../../sass/Components/Header.scss'; // Import file SCSS
-import { BagIcon, SearchIcon, AccountIcon } from '../Icons/index.jsx';
+import { BagIcon, SearchIcon, AccountIcon,MenuIcon } from '../Icons/index.jsx';
 const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
     return (
         <header className="header">
             <div className="header-container">
                 <div className="logo">
                     <Link to="/">BrandName</Link>
                 </div>
-                <nav className="navbar">
+                <nav className={`navbar ${menuOpen ? 'open' : ''}`}>
                     <ul>
                         <li>
                             <Link to="/collections">BỘ SƯU TẬP TRÀ</Link>
@@ -40,6 +44,9 @@ const Header = () => {
                         <Link to="/cart">
                             <BagIcon />
                         </Link>
+                    </div>
+                    <div className="mobile-menu-button" onClick={toggleMenu}>
+                        <MenuIcon />
                     </div>
                 </div>
             </div>

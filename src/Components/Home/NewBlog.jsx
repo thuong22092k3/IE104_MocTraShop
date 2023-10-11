@@ -13,6 +13,14 @@ const sliderSettings = {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 768, // Adjust this breakpoint as needed
+            settings: {
+                slidesToShow: 1, // Change the number of slides to 1 on smaller screens
+            },
+        },
+    ],
 };
 
 

@@ -17,5 +17,10 @@
         }
     }
 
+    @media screen and (max-width: 768px) {
+        p {
+            display: none;
+        }
+    }
 
 }

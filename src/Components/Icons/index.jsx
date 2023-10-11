@@ -1,6 +1,7 @@
 import {
     IoBagHandleOutline,
-    IoCafeOutline
+    IoCafeOutline,
+    IoMenu,
 } from "react-icons/io5";
 import {
     MdOutlinePersonOutline,
@@ -11,7 +12,10 @@ import {
     MdOutlineLocalShipping,
     MdOutlineSell,
 } from "react-icons/md";
-import { HiOutlineSearch } from "react-icons/hi";
+import {
+    HiOutlineSearch,
+    HiOutlineMenu,
+} from "react-icons/hi";
 //import { GoLocation } from "react-icons/go";
 
 const BagIcon = () => {
@@ -49,7 +53,9 @@ const ShippingIcon = () => {
 const SellIcon = () => {
     return <MdOutlineSell size={22} />;
 };
-
+const MenuIcon = () => {
+    return <HiOutlineMenu size={22} />;
+};
 
 
 export {
@@ -63,4 +69,5 @@ export {
     RedeemIcon,
     ShippingIcon,
     SellIcon,
+    MenuIcon,
 };

@@ -22,12 +22,17 @@
                 height: auto;
             }
 
-            p {
+            &__title {
                 font-size: 16px;
                 margin-top: 15px;
                 font-weight: 500;
                 text-transform: uppercase;
+                color: $txt-main-color;
             }
+        }
+
+        .card:hover {
+            background-color: $bg-footer;
         }
     }
 }

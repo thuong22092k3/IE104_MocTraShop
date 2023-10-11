@@ -21,8 +21,11 @@
         flex-grow: 1;
 
         img {
+            max-width: 100%;
+            height: auto;
             margin-right: 20px;
             max-width: 100%;
+            height: auto;
         }
 
         &__info {
@@ -63,11 +66,24 @@
     &__btn:active {
         color: $txt-second-color;
     }
-}
-.slick-prev::before {
-    color: $bg-btn;
-}
 
-.slick-next::before {
-    color: $bg-btn;
+    .slick-prev::before {
+        color: $bg-btn;
+    }
+
+    .slick-next::before {
+        color: $bg-btn;
+    }
+
+    @media screen and (max-width: 768px) {
+        img {
+            max-width: 50%;
+            margin-right: 10px; // Adjust the maximum width for smaller screens
+        }
+
+        .newBlog__content__info {
+            font-size: 10px;
+        }
+
+    }
 }

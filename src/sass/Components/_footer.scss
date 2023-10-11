@@ -39,5 +39,18 @@
         }
       }
     }
+    @media screen and (max-width: 768px) {
+      .footer-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+      }
+      .footer-column{
+        margin-bottom: 20px;
+      }
+      br{
+        display: none;
+      }
+    }
   }
   
