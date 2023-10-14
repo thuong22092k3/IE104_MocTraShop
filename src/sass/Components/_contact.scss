@@ -1,41 +1,79 @@
+.contact {
+    &__content {
+        display: flex;
+        margin: 0 auto;
+        width: 770px;
+        height: 1000px;
+        margin-top: 50px;
 
-.contact__content__header{
-    text-align: center;
-    align-items: center;
-}
-.contact__content__main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
-    gap: 20px;
-}
-input{
-    width: 533.52px;
-    height: 75px;
-    border-radius: 5px;
-}
-textarea{
-    width: 533.52px;
-    height: 120px;
-    border-radius: 5px;
-}
-.button{
-    padding-top: 40px;
-}
-#button_Gui{
-    width: 137px;
-    height: 55px;
-    background-color: black;
-    color: white;
-    border-radius: 5px;
-    display: block;
-    margin: 0 auto;
+        &__header {
+            padding-top: 50px;
+            text-align: center;
+            align-items: center;
 
-}
-.contact__content{
-    display: flex;
-    margin: 0 auto;
-    width: 770px;
-    height: 1000px;
-    margin-top: 50px;
+            .grey_text {
+                color: #9F9F9F;
+            }
+        }
+
+        &__main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-top: 50px;
+            gap: 20px;
+
+            &__right {
+                display: grid;
+                padding-bottom: 50mm;
+                input {
+                    width: 533.52px;
+                    height: 75px;
+                    border-radius: 5px;
+                    border: 1px solid #9F9F9F;
+                    padding: 20px;
+                }
+
+                textarea {
+                    width: 533.52px;
+                    height: 120px;
+                    border-radius: 5px;
+                    border: 1px solid #9F9F9F;
+                    padding: 20px;
+                }
+
+                .button {
+                    // padding-top: 40px;
+                }
+
+                #button_Gui {
+                    width: 137px;
+                    height: 55px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 5px;
+                    display: block;
+                    margin: 0 auto;
+                    &:hover{
+                        background-color: white;
+                        color: black;
+                    }
+
+                }
+            }
+
+            &__left {
+                &__block {
+                    display: block;
+                    width: 300px;
+                    height: 120px;
+                }
+                &__text1{
+                    font-size: 24px;
+                    padding-bottom: 10px;
+                }
+            }
+
+        }
+
+    }
 }
