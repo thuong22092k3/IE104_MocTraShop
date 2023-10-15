@@ -27,6 +27,10 @@ const Header = () => {
                         <li>
                             <Link to="/Contact">LIÊN HỆ</Link>
                         </li>
+                        <li>
+                            <Link to="/Mybag">My Bag</Link>
+                        </li>
+
                     </ul>
                 </nav>
                 <div className="icons">

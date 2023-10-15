@@ -1,0 +1,17 @@
+.mybag {
+    &__header {
+        color: #A0A0A0;
+        text-align: center;
+        .divider {
+            display: inline-block;
+            width: 1px;
+            background-color: #000;
+            height: 1em;
+            /* Điều chỉnh độ cao của đường kẻ */
+            margin: 0 5px;
+        }
+    }
+
+
+
+}
