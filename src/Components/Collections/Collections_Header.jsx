@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link, useParams } from "react-router-dom";
 import { Breadcrumb, Input, Button } from "antd";
-import Collections_Banner from "../../assets/Images/Collections_Banner.jpg"
-import BannerCate_Tra from"../../assets/Images/BannerCate_Tra.jpg";
+import { BannerCate_Tra,  Collections_Banner } from '../../assets/Images';
 
 const Collections_Header = () => {
     return (
@@ -19,5 +18,4 @@ const Collections_Header = () => {
         </div>
     )
 }
-
 export default Collections_Header

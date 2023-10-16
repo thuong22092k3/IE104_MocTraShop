@@ -2,10 +2,7 @@ import React, { useRef } from 'react'
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import New_Blog_Image_1 from '../../assets/Images/New_Blog_Image_1.jpg'
-import New_Blog_Image_2 from '../../assets/Images/New_Blog_Image_2.jpg'
-import New_Blog_Image_3 from '../../assets/Images/New_Blog_Image_3.jpg'
-
+import { New_Blog_Image_1, New_Blog_Image_2, New_Blog_Image_3 } from '../../assets/Images'
 
 const sliderSettings = {
     dots: true,

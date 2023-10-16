@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 //import Switch from "react-switch";
-import Collections1 from "../../assets/Images/Collections1.jpg"
+import {Collections1} from '../../assets/Images'
 
 class Collections extends Component {
   constructor() {

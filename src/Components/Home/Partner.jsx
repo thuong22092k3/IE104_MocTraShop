@@ -1,5 +1,5 @@
 import React from 'react'
-import Landing_Second_Image from '../../assets/Images/Landing_Second_Image.jpg'
+import {Landing_Second_Image} from '../../assets/Images'
 
 const Partner = () => {
     return (
