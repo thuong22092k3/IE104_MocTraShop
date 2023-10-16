@@ -1,5 +1,5 @@
 import React from 'react'
-import { LocationIcon, PhoneIcon, CupIcon } from '../Icons'
+import { LocationIcon, PhoneIcon, ClockIcon } from '../Icons'
 const Contact_Content = () => {
     return (
         <div className="contact">
@@ -12,25 +12,42 @@ const Contact_Content = () => {
 
                 <div class="contact__content__main">
                     <div class="contact__content__main__left">
-                        <div class="contact__content__main__left__block">
+                        <table>
+                            <tr>
+                                <td class="img_element"><LocationIcon /> </td>
+                                <td>
+                                    <div class="contact__content__main__left__block">
+                                        <p class="contact__content__main__left__text1">Địa chỉ</p>
+                                        <p>KTX Khu A, Đường số 6, <br /> Phường Linh Trung, Thủ Đức</p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img_element"><PhoneIcon /></td>
+                                <td>
+                                    <div class="contact__content__main__left__block">
 
-                            <p class="contact__content__main__left__text1"><LocationIcon /> Địa chỉ</p>
-                            <p>KTX Khu A, Đường số 6, <br /> Phường Linh Trung, Thủ Đức</p>
-                        </div>
-                        <div class="contact__content__main__left__block">
+                                        <p class="contact__content__main__left__text1"> Số điện thoại</p>
+                                        <p>Di động: 0354466237 <br />
+                                            Đường dây nóng: 0399776527
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="img_element"><ClockIcon /></td>
+                                <td>
+                                    <div class="contact__content__main__left__block">
 
-                            <p class="contact__content__main__left__text1"><PhoneIcon /> Số điện thoại</p>
-                            <p>Di động: 0354466237 <br />
-                                Đường dây nóng: 0399776527
-                            </p>
-                        </div>
-                        <div class="contact__content__main__left__block">
+                                        <p class="contact__content__main__left__text1"> Thời gian làm việc</p>
+                                        <p>Thứ 2-Thứ 6: 8:00-22:00 <br />
+                                            Thứ 7-Chủ Nhật: 8:00-21:00
+                                        </p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
 
-                            <p class="contact__content__main__left__text1"><CupIcon /> Thời gian làm việc</p>
-                            <p>Thứ2-Thứ6: 8:00-22:00 <br />
-                                Thứ7-Chủ Nhật: 8:00-21:00
-                            </p>
-                        </div>
                     </div>
                     <div class="contact__content__main__right">
                         <p>Tên của bạn</p>

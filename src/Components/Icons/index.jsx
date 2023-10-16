@@ -17,6 +17,9 @@ import {
     HiOutlineMenu,
 } from "react-icons/hi";
 //import { GoLocation } from "react-icons/go";
+import {
+    AiOutlineClockCircle,
+} from "react-icons/ai";
 
 const BagIcon = () => {
     return <IoBagHandleOutline size={22} />;
@@ -56,6 +59,9 @@ const SellIcon = () => {
 const MenuIcon = () => {
     return <HiOutlineMenu size={22} />;
 };
+const ClockIcon = () => {
+    return <AiOutlineClockCircle size={22} />;
+};
 
 
 export {
@@ -70,4 +76,5 @@ export {
     ShippingIcon,
     SellIcon,
     MenuIcon,
+    ClockIcon,
 };
