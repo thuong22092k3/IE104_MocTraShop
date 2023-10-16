@@ -2,8 +2,7 @@
     &__content {
         display: flex;
         margin: 0 auto;
-        width: 770px;
-        height: 1000px;
+        justify-content: space-around;
         margin-top: 50px;
 
         &__header {

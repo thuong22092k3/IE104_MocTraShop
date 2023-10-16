@@ -16,12 +16,12 @@ class Collections extends Component {
         organic: false,
       },
 
-      collectionFilters: { // Thêm các filter cho Bộ Sưu Tập
+      collectionFilters: { 
         hongTra: false,
         traXanh: false,
       },
       showCollectionFilters: false,
-      sortOption: 'alphabetical', // Default sort option
+      sortOption: 'alphabetical',
       products: [
         {
           name: 'Hồng Trà A',
