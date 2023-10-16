@@ -37,9 +37,7 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="account-icon">
-                        <Link to="/account">
-                            <AccountIcon />
-                        </Link>
+                        <Link to="/Account"><AccountIcon /></Link>
                     </div>
                     <div className="cart-icon">
                         <Link to="/Mybag"><BagIcon /></Link>
