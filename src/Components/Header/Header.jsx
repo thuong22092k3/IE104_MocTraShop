@@ -1,6 +1,6 @@
-import React, { useState }from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { BagIcon, SearchIcon, AccountIcon,MenuIcon } from '../Icons/index.jsx';
+import { BagIcon, SearchIcon, AccountIcon, MenuIcon } from '../Icons/index.jsx';
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
@@ -27,9 +27,6 @@ const Header = () => {
                         <li>
                             <Link to="/Contact">LIÊN HỆ</Link>
                         </li>
-                        <li>
-                            <Link to="/Mybag">My Bag</Link>
-                        </li>
 
                     </ul>
                 </nav>
@@ -45,9 +42,7 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="cart-icon">
-                        <Link to="/cart">
-                            <BagIcon />
-                        </Link>
+                        <Link to="/Mybag"><BagIcon /></Link>
                     </div>
                     <div className="mobile-menu-button" onClick={toggleMenu}>
                         <MenuIcon />
