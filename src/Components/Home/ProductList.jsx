@@ -2,13 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import Hong_Tra from '../../assets/Images/Hong_Tra.jpg'
 import Tra_Xanh from '../../assets/Images/Tra_Xanh.jpg'
-import Bach_Tra from '../../assets/Images/Bach_Tra.jpg'
 import Matcha from '../../assets/Images/Matcha.jpg'
 import Tra_Thao_Moc from '../../assets/Images/Tra_Thao_Moc.jpg'
 import Tra_Chai from '../../assets/Images/Tra_Chai.jpg'
 import Tra_O_Long from '../../assets/Images/Tra_O_Long.jpg'
 import Tra_Rooibos from '../../assets/Images/Tra_Rooibos.jpg'
 import Dung_Cu_Pha_Tra from '../../assets/Images/Dung_Cu_Pha_Tra.jpg'
+import {Bach_Tra } from '../../assets/Images/Images'
 
 const products = [
     { id: 1, name: 'Hồng trà', imageUrl: Hong_Tra },
