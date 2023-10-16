@@ -1,0 +1,20 @@
+import React from 'react'
+import Helmet from "../../Components/Helmet";
+import Collections_Header from '../../Components/Collections/Collections_Header';
+import ProductInfo from '../../Components/Product/ProductInfo';
+import Section, { SectionBody, SectionTitle } from "../../Components/Section";
+
+const Collections = () => {
+  return (
+    <Helmet title="Bộ sưu tập">
+      <Section>
+        <SectionBody>
+          <Collections_Header></Collections_Header>
+        </SectionBody>
+      </Section>
+      <ProductInfo></ProductInfo>
+    </Helmet>
+  )
+}
+
+export default Collections

@@ -1,6 +1,7 @@
 .collections {
   display: flex;
   padding: 20px 76px;
+
   hr {
     height: 1px;
     background: #A0A0A0;
@@ -8,6 +9,7 @@
     border: none;
     width: 150px;
   }
+
   .filters {
     width: 20%;
   }
@@ -82,6 +84,11 @@
 
 .product-details {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $txt-main-color;
 }
 
 .product-name {
@@ -101,6 +108,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.product:hover {
+  box-shadow: 0 0 2em 0px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+  border-radius: 5px;
 }
 
 .product-name {
@@ -163,7 +176,7 @@ input:checked+.slider {
   background-color: #282828;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
   background-color: #fff;
 }
 

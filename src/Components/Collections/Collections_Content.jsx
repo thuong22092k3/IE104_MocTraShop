@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 //import Switch from "react-switch";
-import {Collections1} from '../../assets/Images'
+import { Link } from 'react-router-dom';
+import { Collections1 } from '../../assets/Images'
 
 class Collections extends Component {
   constructor() {
@@ -16,12 +17,12 @@ class Collections extends Component {
         organic: false,
       },
 
-      collectionFilters: { 
+      collectionFilters: { // Thêm các filter cho Bộ Sưu Tập
         hongTra: false,
         traXanh: false,
       },
       showCollectionFilters: false,
-      sortOption: 'alphabetical',
+      sortOption: 'alphabetical', // Default sort option
       products: [
         {
           name: 'Hồng Trà A',
@@ -201,11 +202,13 @@ class Collections extends Component {
   renderProducts() {
     return this.state.products.map((product, index) => (
       <div key={index} className="product">
-        <img src={product.image} alt={product.name} />
-        <div className="product-details">
-          <div className="product-name">{product.name}</div>
-          <div className="product-price"><p>đ {product.price}</p> / 50g</div>
-        </div>
+        <Link to={`/product`}>
+          <img src={product.image} alt={product.name} />
+          <div className="product-details">
+            <div className="product-name">{product.name}</div>
+            <div className="product-price"><p>đ {product.price}</p> / 50g</div>
+          </div>
+        </Link>
       </div>
     ));
   }
@@ -225,7 +228,9 @@ class Collections extends Component {
               <option value="alphabetical">TỪ Z - A</option>
             </select>
           </div>
-          <div className="product-list">{this.renderProducts()}</div>
+          <div className="product-list">
+            {this.renderProducts()}
+          </div>
         </div>
       </div>
     );
