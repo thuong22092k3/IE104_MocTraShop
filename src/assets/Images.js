@@ -70,3 +70,14 @@ export {
 export {
     default as Collections1
 } from './Images/Collections1.jpg'
+
+//Relative Products
+export {
+    default as Product_Relative1
+} from './Images/Product_Relative1.jpg'
+export {
+    default as Product_Relative2
+} from './Images/Product_Relative2.jpg'
+export {
+    default as Product_Relative3
+} from './Images/Product_Relative3.jpg'
