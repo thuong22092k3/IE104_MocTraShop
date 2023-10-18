@@ -1,0 +1,104 @@
+.sale {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0;
+
+    img {
+        height: 100%;
+    }
+
+    &__info {
+        h1 {
+            font-weight: 500;
+            font-size: 36px;
+            margin-bottom: 21px;
+        }
+        h3{
+            font-weight: 400;
+            font-size: 16px;
+        }
+        &__p{
+            margin-bottom: 21px;
+            padding: 5px 0;
+            font-weight: 500;
+        }
+        &__origin {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 21px;
+
+            &__content {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 21px;
+
+                p {
+                    font-weight: 500;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        &__classify{
+            margin-bottom: 21px;
+        }
+
+        &__components {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 21px;
+
+            &__quantity {
+                display: flex;
+                align-items: center;
+
+                &__number {
+                    font-size: 22px;
+                    padding: 0 10px;
+                }
+
+                &__minus,
+                &__plus {
+                    font-size: 30px;
+                    padding: 0 10px;
+                }
+
+                &__minus:hover,
+                &__plus:hover {
+                    cursor: pointer;
+                    background-color: $hover-quantity;
+                    border-radius: 5px;
+                }
+            }
+
+            &__button {
+                display: flex;
+                align-items: end;
+                color: $txt-white;
+                text-transform: uppercase;
+                font-weight: 500;
+                background-color: $bg-btn;
+                border: none;
+                padding: 15px 30px;
+                cursor: pointer;
+
+                p {
+                    margin-left: 15px;
+                }
+            }
+
+            &__button:hover {
+                color: $txt-main-color;
+                background-color: $txt-white;
+                border: 1px solid $txt-main-color;
+            }
+
+            &__button:active {
+                color: $txt-white;
+                background-color: $bg-btn;
+            }
+        }
+    }
+}

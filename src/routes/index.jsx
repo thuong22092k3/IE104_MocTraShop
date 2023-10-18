@@ -1,9 +1,9 @@
-import Home from "../Pages/Home/Home.jsx";
-import Contact from "../Pages/Contact/Contact.jsx"
-import Collections from "../Pages/Collections/Collections.jsx";
-import MyBag from "../Pages/Mybag/Mybag.jsx";
-import Account from "../Pages/Account/Account.jsx";
-import Product from "../Pages/Product/Product.jsx";
+import Home from "../Pages/Home";
+import Contact from "../Pages/Contact"
+import Collections from "../Pages/Collections";
+import MyBag from "../Pages/Mybag";
+import Account from "../Pages/Account";
+import Product from "../Pages/Product";
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/Collections", component: Collections },

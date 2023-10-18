@@ -12,6 +12,8 @@ import {
     MdOutlineLocalShipping,
     MdOutlineSell,
     MdOutlineAccessAlarm,
+    MdOutlineLanguage,
+    MdEco,
 } from "react-icons/md";
 import {
     HiOutlineSearch,
@@ -88,7 +90,12 @@ const AlarmIcon = () => {
 const CircleIcon = () => {
     return <FaCircle size={22} color="#BC575F"/>;
 };
-
+const LanguageIcon = () => {
+    return <MdOutlineLanguage size={22} />;
+};
+const EcoIcon = () => {
+    return <MdEco size={22} />;
+};
 
 export {
     BagIcon,
@@ -107,4 +114,6 @@ export {
     TemperatureIcon, 
     AlarmIcon,
     CircleIcon,
+    LanguageIcon, 
+    EcoIcon,
 };

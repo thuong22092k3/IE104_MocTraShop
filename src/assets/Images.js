@@ -81,3 +81,35 @@ export {
 export {
     default as Product_Relative3
 } from './Images/Product_Relative3.jpg'
+
+//Product Sales
+export {
+    default as Product_Sale1
+} from './Images/Product_Sale1.jpg'
+
+/*
+    Product Sales Classify
+*/
+export {
+    default as Bag_50g
+} from './Images/Bag_50g.jpg'
+
+export {
+    default as Bag_100g
+} from './Images/Bag_100g.jpg'
+
+export {
+    default as Bag_170g
+} from './Images/Bag_170g.jpg'
+
+export {
+    default as Bag_250g
+} from './Images/Bag_250g.jpg'
+
+export {
+    default as Bag_1kg
+} from './Images/Bag_1kg.jpg'
+
+export {
+    default as Bag_Sample
+} from './Images/Bag_Sample.jpg'
