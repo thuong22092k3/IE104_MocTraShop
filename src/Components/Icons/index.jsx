@@ -11,6 +11,7 @@ import {
     MdOutlineRedeem,
     MdOutlineLocalShipping,
     MdOutlineSell,
+    MdOutlineAccessAlarm,
 } from "react-icons/md";
 import {
     HiOutlineSearch,
@@ -20,6 +21,19 @@ import {
 import {
     AiOutlineClockCircle,
 } from "react-icons/ai";
+
+import {
+    CiPillsBottle1,
+} from "react-icons/ci";
+
+import {
+    LiaTemperatureLowSolid,
+} from "react-icons/lia";
+
+import {
+    FaCircle,
+} from "react-icons/fa";
+
 
 const BagIcon = () => {
     return <IoBagHandleOutline size={22} />;
@@ -62,6 +76,18 @@ const MenuIcon = () => {
 const ClockIcon = () => {
     return <AiOutlineClockCircle size={22} />;
 };
+const BottleIcon = () => {
+    return <CiPillsBottle1 size={22} />;
+};
+const TemperatureIcon = () => {
+    return <LiaTemperatureLowSolid size={22} />;
+};
+const AlarmIcon = () => {
+    return <MdOutlineAccessAlarm size={22} />;
+};
+const CircleIcon = () => {
+    return <FaCircle size={22} color="#BC575F"/>;
+};
 
 
 export {
@@ -77,4 +103,8 @@ export {
     SellIcon,
     MenuIcon,
     ClockIcon,
+    BottleIcon,
+    TemperatureIcon, 
+    AlarmIcon,
+    CircleIcon,
 };
