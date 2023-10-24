@@ -33,7 +33,7 @@
       <tr>
        <td>Nguyễn Tuệ Minh</td>
        <td>21521140</td>
-       <td></td>
+       <td>https://github.com/ngtueminh</td>
        <td>21521140@gm.uit.edu.vn</td>  
       </tr>
       <tr>
