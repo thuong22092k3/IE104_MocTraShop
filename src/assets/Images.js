@@ -113,3 +113,11 @@ export {
 export {
     default as Bag_Sample
 } from './Images/Bag_Sample.jpg'
+
+
+/**
+ CartSidebar
+ */
+ export {
+    default as CartSidebar_1
+} from './Images/CartSidebar_1.jpg'

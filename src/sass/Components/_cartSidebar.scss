@@ -1,0 +1,105 @@
+.cartSidebar {
+    width: 501px;
+    height: auto;
+    background-color: $txt-white;
+    padding: 50px 20px;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+
+    .span_500 {
+        font-weight: 500;
+    }
+
+    h1 {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    &__products {
+        margin: 50px 0;
+        height: 70%;
+
+        &__product {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            margin: 50px 0;
+
+            &__detail {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    text-decoration: underline;
+                }
+
+                button:active {
+                    color: $txt-second-color;
+                }
+            }
+
+            &__quantity {
+                p {
+                    margin-top: 10px;
+                    margin-left: 20px;
+                }
+            }
+
+        }
+    }
+
+    &__total {
+        hr {
+            margin: 20px 0;
+            border: none;
+            height: 1px;
+            background-color: $hr-color;
+        }
+
+        &__payment {
+            display: flex;
+            justify-content: space-between;
+            align-self: center;
+            margin: 20px 0;
+        }
+
+        &__button {
+            width: 100%;
+            color: $txt-white;
+            text-transform: uppercase;
+            font-weight: 500;
+            background-color: $bg-btn;
+            border: none;
+            padding: 15px 30px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        &__button:hover {
+            color: $txt-main-color;
+            background-color: $txt-white;
+            border: 1px solid $txt-main-color;
+        }
+
+        &__button:active {
+            color: $txt-white;
+            background-color: $bg-btn;
+        }
+    }
+
+}
