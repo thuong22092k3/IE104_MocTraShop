@@ -1,17 +1,78 @@
 .mybag {
-    &__header {
-        color: #A0A0A0;
-        text-align: center;
-        .divider {
-            display: inline-block;
-            width: 1px;
-            background-color: #000;
-            height: 1em;
-            /* Điều chỉnh độ cao của đường kẻ */
-            margin: 0 5px;
+    &__content {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 20%;
+        padding: 20px 100px 100px 100px;
+
+        &__left {
+            height: fit-content;
+        }
+
+        &__right {
+            h1 {
+                font-weight: 400;
+                font-size: 22px;
+            }
+
+            &__bill {
+                background-color: $bg-footer;
+                padding: 30px 20px;
+                margin: 20px 0;
+
+                &__p {
+                    font-size: 13px;
+                    color: gray;
+                    margin-bottom: 10px;
+                }
+            }
+
+            &__payment {
+                background-color: $bg-footer;
+                padding: 30px 20px;
+                margin: 20px 0;
+
+                &__method {
+                    margin-top: 30px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+            }
+
+            &__delivery {
+                background-color: $bg-footer;
+                padding: 30px 20px;
+
+                h1 {
+                    margin-bottom: 20px;
+                }
+
+                &__rule {
+                    display: flex;
+                    align-items: start;
+                    padding: 10px 0;
+
+                    p {
+                        padding: 0 10px;
+                    }
+                }
+            }
         }
     }
 
-
+    @media screen and (max-width: 768px) {
+        .mybag__content {
+            display: grid;
+            grid-template-columns: 100%;
+            &__right{
+                &__payment {
+                    &__method {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
 
 }

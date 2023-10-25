@@ -14,6 +14,7 @@ import {
     MdOutlineAccessAlarm,
     MdOutlineLanguage,
     MdEco,
+    MdKeyboardArrowRight,
 } from "react-icons/md";
 import {
     HiOutlineSearch,
@@ -96,6 +97,9 @@ const LanguageIcon = () => {
 const EcoIcon = () => {
     return <MdEco size={22} />;
 };
+const ArrowRightIcon = () => {
+    return <MdKeyboardArrowRight size={22} />;
+};
 
 export {
     BagIcon,
@@ -116,4 +120,5 @@ export {
     CircleIcon,
     LanguageIcon, 
     EcoIcon,
+    ArrowRightIcon,
 };

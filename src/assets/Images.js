@@ -121,3 +121,29 @@ export {
  export {
     default as CartSidebar_1
 } from './Images/CartSidebar_1.jpg'
+export {
+    default as CartSidebar_2
+} from './Images/CartSidebar_2.jpg'
+export {
+    default as CartSidebar_3
+} from './Images/CartSidebar_3.jpg'
+
+/**
+ * Cart
+ */
+export {
+    default as Payment_maestro_dark_large
+} from './Images/Payment_ maestro-dark-large.jpg'
+export {
+    default as Payment_Visa
+} from './Images/Payment_Visa.jpg'
+export {
+    default as Payment_advance
+} from './Images/Payment_advance.jpg'
+export {
+    default as Payment_momo
+} from './Images/Payment_momo.jpg'
+export {
+    default as Payment_mastercard_dark_large
+} from './Images/Payment_mastercard-dark-large.jpg'
+
