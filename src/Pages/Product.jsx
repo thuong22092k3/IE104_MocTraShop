@@ -9,12 +9,12 @@ import Section, { SectionBody, SectionTitle } from "../Components/Section";
 const Collections = () => {
   return (
     <Helmet title="Bộ sưu tập">
-      <ProductSale/>
       <Section>
         <SectionBody>
           <Collections_Header></Collections_Header>
         </SectionBody>
       </Section>
+      <ProductSale/>
       <ProductInfo></ProductInfo>
       <ProductRelative/>
       
