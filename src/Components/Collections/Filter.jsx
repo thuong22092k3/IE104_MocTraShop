@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import * as Icon from "react-icons/fi";
+import Checkbox from "react-custom-checkbox";
 
 const Filter = () => {
     const checkList1 = ["Hồng trà", "Trà xanh", "Bạch trà", "Trà Chai Ấn Độ", "Matcha", "Trà thảo mộc", "Trà Ô long", "Trà Rooibos", "Dụng cụ pha trà"];
@@ -18,25 +20,14 @@ const Filter = () => {
     const [organic, setOrganic] = useState(false);
     const [checked, setChecked] = useState([]);
 
-    const handleCheck = (event) => {
-        var updatedList = [...checked];
-        if (event.target.checked) {
-            updatedList = [...checked, event.target.value];
-        } else {
-            updatedList.splice(checked.indexOf(event.target.value), 1);
-        }
+    const handleCheck = (item) => {
+        const updatedList = checked.includes(item)
+            ? checked.filter((value) => value !== item)
+            : [...checked, item];
+
         setChecked(updatedList);
     };
-
     var isChecked = (item) => checked.includes(item) ? "checked-item" : "not-checked-item";
-    const handleOrganicSwitch = () => {
-        this.setState((prevState) => ({
-            filters: {
-                ...prevState.filters,
-                organic: !prevState.filters.organic,
-            },
-        }));
-    };
 
     return (
         <div className="filters">
@@ -57,8 +48,16 @@ const Filter = () => {
                             <td colSpan="2">
                                 <div className="filters__filter">
                                     {checkList1.map((item, index) => (
-                                        <div key={index}>
-                                            <input value={item} type="checkbox" onChange={handleCheck} />
+                                        <div key={index} className="checkbox-row">
+                                            <Checkbox
+                                                icon={<Icon.FiCheck color="#282828" size={22} />}
+                                                name="my-input"
+                                                checked={checked.includes(item)}
+                                                borderColor="#282828"
+                                                borderRadius="1"
+                                                style={{ cursor: "pointer" }}
+                                                onChange={() => handleCheck(item)}
+                                            />
                                             <span className={isChecked(item)}>{item}</span>
                                         </div>
                                     ))}
@@ -82,8 +81,16 @@ const Filter = () => {
                             <td colSpan="2">
                                 <div className="filters__filter">
                                     {checkList2.map((item, index) => (
-                                        <div key={index}>
-                                            <input value={item} type="checkbox" onChange={handleCheck} />
+                                        <div key={index} className="checkbox-row">
+                                            <Checkbox
+                                                icon={<Icon.FiCheck color="#282828" size={22} />}
+                                                name="my-input"
+                                                checked={checked.includes(item)}
+                                                borderColor="#282828"
+                                                borderRadius="1"
+                                                style={{ cursor: "pointer" }}
+                                                onChange={() => handleCheck(item)}
+                                            />
                                             <span className={isChecked(item)}>{item}</span>
                                         </div>
                                     ))}
@@ -107,8 +114,16 @@ const Filter = () => {
                             <td colSpan="2">
                                 <div className="filters__filter">
                                     {checkList3.map((item, index) => (
-                                        <div key={index}>
-                                            <input value={item} type="checkbox" onChange={handleCheck} />
+                                        <div key={index} className="checkbox-row">
+                                            <Checkbox
+                                                icon={<Icon.FiCheck color="#282828" size={22} />}
+                                                name="my-input"
+                                                checked={checked.includes(item)}
+                                                borderColor="#282828"
+                                                borderRadius="1"
+                                                style={{ cursor: "pointer" }}
+                                                onChange={() => handleCheck(item)}
+                                            />
                                             <span className={isChecked(item)}>{item}</span>
                                         </div>
                                     ))}
@@ -132,8 +147,16 @@ const Filter = () => {
                             <td colSpan="2">
                                 <div className="filters__filter">
                                     {checkList4.map((item, index) => (
-                                        <div key={index}>
-                                            <input value={item} type="checkbox" onChange={handleCheck} />
+                                        <div key={index} className="checkbox-row">
+                                            <Checkbox
+                                                icon={<Icon.FiCheck color="#282828" size={22} />}
+                                                name="my-input"
+                                                checked={checked.includes(item)}
+                                                borderColor="#282828"
+                                                borderRadius="1"
+                                                style={{ cursor: "pointer" }}
+                                                onChange={() => handleCheck(item)}
+                                            />
                                             <span className={isChecked(item)}>{item}</span>
                                         </div>
                                     ))}
@@ -157,8 +180,16 @@ const Filter = () => {
                             <td colSpan="2">
                                 <div className="filters__filter">
                                     {checkList5.map((item, index) => (
-                                        <div key={index}>
-                                            <input value={item} type="checkbox" onChange={handleCheck} />
+                                        <div key={index} className="checkbox-row">
+                                            <Checkbox
+                                                icon={<Icon.FiCheck color="#282828" size={22} />}
+                                                name="my-input"
+                                                checked={checked.includes(item)}
+                                                borderColor="#282828"
+                                                borderRadius="1"
+                                                style={{ cursor: "pointer" }}
+                                                onChange={() => handleCheck(item)}
+                                            />
                                             <span className={isChecked(item)}>{item}</span>
                                         </div>
                                     ))}
@@ -182,8 +213,16 @@ const Filter = () => {
                             <td colSpan="2">
                                 <div className="filters__filter">
                                     {checkList6.map((item, index) => (
-                                        <div key={index}>
-                                            <input value={item} type="checkbox" onChange={handleCheck} />
+                                        <div key={index} className="checkbox-row">
+                                            <Checkbox
+                                                icon={<Icon.FiCheck color="#282828" size={22} />}
+                                                name="my-input"
+                                                checked={checked.includes(item)}
+                                                borderColor="#282828"
+                                                borderRadius="1"
+                                                style={{ cursor: "pointer" }}
+                                                onChange={() => handleCheck(item)}
+                                            />
                                             <span className={isChecked(item)}>{item}</span>
                                         </div>
                                     ))}

@@ -1,101 +1,110 @@
 .filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+
+  .category-row {
+    border-bottom: 5px solid $hr-color;
+    min-height: 30px; 
+  }
+
+  p {
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+
+  &__button-minus {
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    margin-left: 50px;
+    transition: transform .5s;
+    cursor: pointer;
+  }
+
+  &__button-minus:hover {
+    color: $hr-color;
+    transform: scale(1.2);
+  }
+
+  &__button-minus:active {
+    color: $bg-btn;
+  }
+
+  &__filter {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
-    .category-row {
-        border-bottom: 1px solid #ccc;
-      }
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 10px;
 
-    p {
-        margin-bottom: 10px;
-        font-weight: 500;
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      /* Adjust the gap as needed to separate the checkbox and text */
     }
 
-    &__button-minus {
-        border: none;
-        background-color: transparent;
-        font-size: 25px;
-        margin-left: 50px;
-        transition: transform .5s;
-        cursor: pointer;
+    .checked-item,
+    .not-checked-item {
+      margin-left: 10px;
     }
 
-    &__button-minus:hover {
-        color: $hr-color;
-        transform: scale(1.2);
+    .checked-item {
+      color: $txt-second-color;
     }
 
-    &__button-minus:active {
-        color: $bg-btn;
+    .switch {
+      position: relative;
+      display: inline-block;
+      margin-left: 30px;
+      width: 25px;
+      height: 13px;
     }
 
-    &__filter {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 20px;
-        gap: 10px;
-
-        .checked-item,
-        .not-checked-item {
-            margin-left: 10px;
-        }
-
-        .checked-item {
-            color: $txt-second-color;
-        }
-
-        .switch {
-            position: relative;
-            display: inline-block;
-            margin-left: 30px;
-            width: 25px;
-            height: 13px;
-          }
-          
-          .switch input {
-            opacity: 0;
-            width: 0;
-            height: 0;
-          }
-          
-          .slider {
-            position: absolute;
-            cursor: pointer;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: #fff;
-            -webkit-transition: .4s;
-            transition: .4s;
-            border-radius: 34px;
-            border: 1px solid #282828;
-          }
-          
-          .slider:before {
-            position: absolute;
-            content: "";
-            top: 1px;
-            left: 2px;
-            width: 9px;
-            height: 9px;
-            background-color: #282828;
-            -webkit-transition: .4s;
-            transition: .4s;
-            border-radius: 50%;
-          }
-          
-          input:checked+.slider {
-            background-color: #282828;
-          }
-          
-          input:checked+.slider:before {
-            background-color: #fff;
-          }
-          
-          input:checked+.slider:before {
-            -webkit-transform: translateX(13px);
-            -ms-transform: translateX(22px);
-          }
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
     }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 34px;
+      border: 1px solid #282828;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      top: 1px;
+      left: 2px;
+      width: 9px;
+      height: 9px;
+      background-color: #282828;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked+.slider {
+      background-color: #282828;
+    }
+
+    input:checked+.slider:before {
+      background-color: #fff;
+    }
+
+    input:checked+.slider:before {
+      -webkit-transform: translateX(13px);
+      -ms-transform: translateX(22px);
+    }
+  }
 }
