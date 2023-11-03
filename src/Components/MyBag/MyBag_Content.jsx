@@ -141,7 +141,7 @@ const MyBag_Content = () => {
                         <div className="mybag__content__right__delivery__rule">
                             <ArrowRightIcon />
                             <p>Phí giao hàng cho việc quay lại không được hoàn trả.
-</p>
+                            </p>
                         </div>
                     </div>
                 </div>
