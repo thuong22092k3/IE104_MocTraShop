@@ -43,7 +43,9 @@ const Account_Content = () => {
                             </ul>
                         </div>
                         <div class="account__content__right__signup__button">
-                            <button>TẠO TÀI KHOẢN</button>
+                            <a href="/Signup">
+                                <button>TẠO TÀI KHOẢN</button>
+                            </a>
                         </div>
                     </div>
                     <div class="account__content__right__pay">

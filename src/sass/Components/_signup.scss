@@ -1,0 +1,42 @@
+.signup {
+    display: block;
+    margin: 0 auto;
+    background-color: #F4F4F4;
+    width: 50%;
+    height: 550px;
+    margin-bottom: 2em;
+    p{
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+    &__content{
+        text-align: center;
+        &__box{
+            padding-top: 1em;
+            input {
+                width: 50%;
+                height: 4em;
+                padding: 1em;
+                border: 1px solid black;
+            }
+
+        }
+        &__box1{
+            padding-top: 2em;
+            button{
+                width: 50%;
+                color: white;
+                background-color: black;
+                height: 4em;
+                border: 1pt solid black;
+                &:hover{
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+    }
+    
+}
