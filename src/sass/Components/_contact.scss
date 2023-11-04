@@ -22,8 +22,12 @@
             gap: 20px;
 
             &__right {
-                display: grid;
-                padding-bottom: 50mm;
+                .p1{
+                    padding: 2em 0;
+                }
+                .p0{
+                    padding-bottom: 2em;
+                }
                 input {
                     width: 533.52px;
                     height: 75px;
@@ -40,9 +44,7 @@
                     padding: 20px;
                 }
                 .button_gui{
-                    // position: relative;
-                    // border: 1px solid black;
-                    // top: 10px;
+                    padding: 4em 0;
                 }
                 #button_Gui {
                     width: 137px;

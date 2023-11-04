@@ -50,13 +50,21 @@ const Contact_Content = () => {
 
                     </div>
                     <div class="contact__content__main__right">
-                        <p>Tên của bạn</p>
+                        <div class="p0">
+                            <p>Tên của bạn</p>
+                        </div>
                         <input type="text" placeholder='Abc' />
-                        <p>Địa chỉ gmail</p>
+                        <div class="p1">
+                            <p>Địa chỉ gmail</p>
+                        </div>
                         <input type="text" placeholder='Abc@gmail.com' />
-                        <p>Chủ đề</p>
+                        <div class="p1">
+                            <p>Chủ đề</p>
+                        </div>
                         <input type="text" placeholder='Abc' />
-                        <p>Bạn có câu hỏi gì về chủ đề này?</p>
+                        <div class="p1">
+                            <p>Bạn có câu hỏi gì về chủ đề này?</p>
+                        </div>
                         <textarea name="" id="" cols="30" rows="10" placeholder='Abc...'></textarea> <br />
                         <div class="button_gui">
                             <button id="button_Gui">Gửi</button>
