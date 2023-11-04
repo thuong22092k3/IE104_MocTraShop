@@ -6,6 +6,8 @@ import Account from "../Pages/Account";
 import Product from "../Pages/Product";
 import CartSidebar from "../Components/Header/CartSidebar";
 import Signup from "../Pages/Signup";
+import Delivery from "../Pages/Delivery";
+import Payment from "../Pages/Payment";
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/Collections", component: Collections },
@@ -14,6 +16,8 @@ const publicRoutes = [
   { path: "/Account", component: Account },
   { path: "/Product", component: Product },
   { path: "/Signup", component: Signup },
+  { path: "/Delivery", component: Delivery },
+  { path: "/Payment", component: Payment },
 ];
 
 export { publicRoutes };

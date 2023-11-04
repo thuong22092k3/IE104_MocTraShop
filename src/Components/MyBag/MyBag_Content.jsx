@@ -84,9 +84,11 @@ const MyBag_Content = () => {
                             <p>Tổng</p>
                             <p> ₫2000</p>
                         </div>
-                        <button className="cartSidebar__total__button">
-                            <p>mua hàng</p>
-                        </button>
+                        <a href="/Collections">
+                            <button className="cartSidebar__total__button">
+                                <p>QUAY LẠI MUA SẮM</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
                 <div class="mybag__content__right">
@@ -107,9 +109,11 @@ const MyBag_Content = () => {
                                 <p> ₫2000</p>
                             </div>
                             <p className="mybag__content__right__bill__p">Thời gian vận chuyển ước tính: 2 ngày</p>
-                            <button className="cartSidebar__total__button">
-                                <p>thanh toán</p>
-                            </button>
+                            <a href="/Delivery">
+                                <button className="cartSidebar__total__button">
+                                    <p>THANH TOÁN</p>
+                                </button>
+                            </a>
                         </div>
                     </div>
 

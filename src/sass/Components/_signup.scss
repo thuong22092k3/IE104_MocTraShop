@@ -5,16 +5,21 @@
     width: 50%;
     height: 550px;
     margin-bottom: 2em;
-    p{
+
+    p {
         text-align: center;
     }
-    h1{
+
+    h1 {
         text-align: center;
     }
-    &__content{
+
+    &__content {
         text-align: center;
-        &__box{
+
+        &__box {
             padding-top: 1em;
+
             input {
                 width: 50%;
                 height: 4em;
@@ -23,20 +28,23 @@
             }
 
         }
-        &__box1{
+
+        &__box1 {
             padding-top: 2em;
-            button{
+
+            button {
                 width: 50%;
                 color: white;
                 background-color: black;
                 height: 4em;
                 border: 1pt solid black;
-                &:hover{
+
+                &:hover {
                     background-color: white;
                     color: black;
                 }
             }
         }
     }
-    
+
 }
