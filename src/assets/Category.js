@@ -1,47 +1,47 @@
 const categories = [
     {
         id: 1,
-        display: "Hồng trà",
+        display: "HỒNG TRÀ",
         categorySlug: "hong-tra",
     },
     {
         id: 2,
-        display: "Trà xanh",
+        display: "TRÀ XANH",
         categorySlug: "tra-xanh",
     },
     {
         id: 3,
-        display: "Bạch trà",
+        display: "BẠCH TRÀ",
         categorySlug: "bach-tra",
     },
     {
         id: 4,
-        display: "Match",
+        display: "MATCHA",
         categorySlug: "matcha",
     },
     {
         id: 5,
-        display: "Trà thảo mộc",
+        display: "TRÀ THẢO MỘC",
         categorySlug: "tra-thao-moc",
     },
     {
         id: 6,
-        display: "Trà Chai Ấn Độ",
+        display: "TRÀ CHAI ẤN ĐỘ",
         categorySlug: "tra-chai-an-do",
     },
     {
         id: 7,
-        display: "Trà Ô long",
+        display: "TRÀ Ô LONG",
         categorySlug: "tra-o-long",
     },
     {
         id: 8,
-        display: "Trà Rooibos",
+        display: "TRÀ ROOIBOS",
         categorySlug: "tra-rooibos",
     },
     {
         id: 9,
-        display: "Dụng cụ pha trà",
+        display: "DỤNG CỤ PHA TRÀ",
         categorySlug: "dung-cu-pha-tra",
     }
 ]

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import {
     CartSidebar_1
 } from '../../assets/Images'
@@ -51,9 +52,12 @@ const CartSidebar = () => {
                     <p>Thành tiền</p>
                     <p> ₫2000</p>
                 </div>
-                <button className="cartSidebar__total__button">
-                    <p>mua hàng</p>
-                </button>
+                <Link to="/Delivery">
+                    <button className="cartSidebar__total__button">
+                        <p>mua hàng</p>
+                    </button>
+                </Link>
+
             </div>
         </div>
     )

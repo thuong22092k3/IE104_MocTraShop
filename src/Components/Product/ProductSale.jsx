@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
 import {
     Product_Sale1,
     Bag_50g, Bag_100g,
@@ -59,7 +58,7 @@ const ProductSale = ({ product }) => {
                             <p>Thuần chay</p>
                         </div>
                     </div>
-                    <h1> ₫{product.price}</h1>
+                    <h1> ₫{product.price}.000</h1>
                     <p className="sale__info__p">Phân loại</p>
                     <div className="sale__info__classify">
                         <button><img src={Bag_50g} className="image" alt="" /></button>
@@ -79,7 +78,6 @@ const ProductSale = ({ product }) => {
                             <BagIcon />
                             <p>Thêm vào giỏ hàng</p>
                         </button>
-
                     </div>
                 </div>
 

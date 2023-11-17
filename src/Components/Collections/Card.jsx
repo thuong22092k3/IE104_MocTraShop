@@ -12,7 +12,7 @@ const Card = ({ item }) => {
                 <div className="product-details">
                     <div className="product-name">{item.title}</div>
                     <div className="product-price">
-                        <p>đ {item.price}</p> / 50g
+                        <p>đ {item.price}.000</p> / 50g
                     </div>
                 </div>
             </Link>

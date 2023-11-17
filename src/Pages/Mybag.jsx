@@ -12,7 +12,7 @@ const MyBag = () => {
     { title: 'GIAO HÀNG' },
     { title: 'ĐÁNH GIÁ VÀ THANH TOÁN' },
   ];
-  const activeStep = 1;
+  const activeStep = 0;
   return (
     <Helmet title="Trang chủ">
       <div class="mybag__header">
