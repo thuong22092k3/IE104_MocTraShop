@@ -10,7 +10,7 @@ import {
 import { LanguageIcon, RedeemIcon, EcoIcon, BagIcon } from '../Icons/index'
 import CartSidebar from '../Header/CartSidebar';
 
-const ProductSale = () => {
+const ProductSale = ({ product }) => {
     const [quantity, setQuantity] = useState(1);
     const [isCartVisible, setCartVisible] = useState(false);
 
@@ -30,24 +30,25 @@ const ProductSale = () => {
 
 
     const handleOverlayClick = () => {
+        console.log("Overlay clicked");
         setCartVisible(false);
     };
 
     const handleCartSidebarClick = (e) => {
-        e.stopPropagation(); 
+        e.stopPropagation();
     };
 
     return (
         <div>
             <div className="sale">
-                <div><img src={Product_Sale1} alt="" /></div>
+                <div className="sale__img"><img src={product.image01} alt={product.title} /></div>
                 <div className="sale__info">
-                    <h1>Trà quế gừng Ceylon</h1>
-                    <h4 className="sale__info__p">Trà Chai ấp áp với hương vị quế gừng.</h4>
+                    <h1>{product.title}</h1>
+                    <h4 className="sale__info__p">{product.describe}</h4>
                     <div className="sale__info__origin">
                         <div className="sale__info__origin__content">
                             <LanguageIcon />
-                            <p>Xuất xứ: Iran</p>
+                            <p>Xuất xứ: {product.origin}</p>
                         </div>
                         <div className="sale__info__origin__content">
                             <RedeemIcon />
@@ -58,16 +59,15 @@ const ProductSale = () => {
                             <p>Thuần chay</p>
                         </div>
                     </div>
-                    <h1> ₫1000</h1>
+                    <h1> ₫{product.price}</h1>
                     <p className="sale__info__p">Phân loại</p>
                     <div className="sale__info__classify">
-
-                        <img src={Bag_50g} alt="" />
-                        <img src={Bag_100g} alt="" />
-                        <img src={Bag_170g} alt="" />
-                        <img src={Bag_250g} alt="" />
-                        <img src={Bag_1kg} alt="" />
-                        <img src={Bag_Sample} alt="" />
+                        <button><img src={Bag_50g} className="image" alt="" /></button>
+                        <button><img src={Bag_100g} className="image" alt="" /></button>
+                        <button><img src={Bag_170g} className="image" alt="" /></button>
+                        <button><img src={Bag_250g} className="image" alt="" /></button>
+                        <button><img src={Bag_1kg} className="image" alt="" /></button>
+                        <button><img src={Bag_Sample} className="image" alt="" /></button>
                     </div>
                     <div className="sale__info__components">
                         <div className="sale__info__components__quantity">

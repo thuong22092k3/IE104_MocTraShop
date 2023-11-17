@@ -1,65 +1,21 @@
-import React, { Component, useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Collections1 } from '../../assets/Images'
 import Filter from './Filter';
+import productData from '../../assets/Product';
+import categoryData from '../../assets/Category';
+import Card from './Card';  // Update the import statement to the correct path
 
 const Collections_Content = () => {
-    const [products] = useState([
-        {
-            name: 'Hồng Trà A',
-            image: Collections1,
-            price: 1000,
-        },
-        {
-            name: 'Trà Xanh B',
-            image: Collections1,
-            price: 1500,
-        },
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
+    const [products, setProducts] = useState([]);
 
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
+    useEffect(() => {
+        const allProducts = productData.getAllProducts();
+        setProducts(allProducts);
+    }, []);
 
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
-
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
-
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
-
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
-
-        {
-            name: 'Hồng Trà C',
-            image: Collections1,
-            price: 1200,
-        },
-    ]);
     return (
         <div className="collections">
-            <Filter/>
+            <Filter />
             <div className="collections__products">
                 <div className="collections__products__sort">
                     <select>
@@ -70,20 +26,12 @@ const Collections_Content = () => {
                 </div>
                 <div className="collections__products__list">
                     {products.map((product, index) => (
-                        <div key={index} className="product">
-                            <Link to={`/product`}>
-                                <img src={product.image} alt={product.name} />
-                                <div className="product-details">
-                                    <div className="product-name">{product.name}</div>
-                                    <div className="product-price"><p>đ {product.price}</p> / 50g</div>
-                                </div>
-                            </Link>
-                        </div>
+                        <Card item={product} key={index} />
                     ))}
                 </div>
             </div>
         </div>
     );
-}
+};
 
-export default Collections_Content
+export default Collections_Content;

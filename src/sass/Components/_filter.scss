@@ -3,11 +3,6 @@
   justify-content: space-between;
   align-items: start;
 
-  .category-row {
-    border-bottom: 5px solid $hr-color;
-    min-height: 30px; 
-  }
-
   p {
     margin-bottom: 10px;
     font-weight: 500;
@@ -107,4 +102,5 @@
       -ms-transform: translateX(22px);
     }
   }
+
 }

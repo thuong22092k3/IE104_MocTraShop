@@ -16,34 +16,6 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 50px;
-
-        &__product {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-            img {
-                margin-bottom: 10px;
-                height: 100%;
-            }
-
-            p {
-                margin-bottom: 10px;
-                color: $txt-main-color;
-
-                span {
-                    font-weight: 500;
-                }
-            }
-
-        }
-
-        &__product:hover{
-            box-shadow: 0 0 2em 0px rgba(0, 0, 0, 0.4);
-            transform: scale(1.01);
-            border-radius: 5px;
-        }
     }
     @media (max-width: 768px) {
         &__list {

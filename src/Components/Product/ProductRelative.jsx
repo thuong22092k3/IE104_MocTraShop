@@ -1,39 +1,28 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Product_Relative1, Product_Relative2, Product_Relative3 } from '../../assets/Images';
+import productData from '../../assets/Product';
+import Card from '../Collections/Card';
 
 const ProductRelative = () => {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const randomProducts = productData.getProducts(3);
+    setProducts(randomProducts);
+  }, []);
+
   return (
     <div className="relative">
       <h1 className="relative__h1">
-        sản phẩm tương tự
+        Sản phẩm tương tự
       </h1>
       <div className="relative__list">
-        <Link to="/product">
-          <div className="relative__list__product">
-            <img src={Product_Relative1} alt="" />
-            <p>Trà quế gừng Ceylon</p>
-            <p> <span>₫1000</span> / 50 g</p>
-          </div>
-        </Link>
-
-        <Link to="/product">
-          <div className="relative__list__product">
-            <img src={Product_Relative2} alt="" />
-            <p>Trà quế gừng Ceylon</p>
-            <p> <span>₫1000</span> / 50 g</p>
-          </div>
-        </Link>
-        <Link to="/product">
-          <div className="relative__list__product">
-            <img src={Product_Relative3} alt="" />
-            <p>Trà quế gừng Ceylon</p>
-            <p> <span>₫1000</span> / 50 g</p>
-          </div>
-        </Link>
+        {products.map((product) => (
+          <Card item={product} />
+        ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default ProductRelative
+export default ProductRelative;

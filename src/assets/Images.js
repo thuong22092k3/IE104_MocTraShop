@@ -1,7 +1,4 @@
-//Home page
-/*
-Product List
- */
+
 export {
     default as Bach_Tra
 } from './Images/Bach_Tra.jpg'
