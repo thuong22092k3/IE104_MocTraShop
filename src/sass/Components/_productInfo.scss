@@ -1,6 +1,7 @@
 .info {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     background-color: $bg-footer;
     padding: 40px 0;
     font-size: 14px;

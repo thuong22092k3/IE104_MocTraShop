@@ -11,6 +11,7 @@ import Payment from "../Pages/Payment";
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/Collections", component: Collections },
+  { path: "/Collections/:categorySlug", component: Collections },
   { path: "/Contact", component: Contact },
   { path: "/Mybag", component: MyBag },
   { path: "/Account", component: Account },
