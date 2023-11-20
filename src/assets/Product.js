@@ -18,13 +18,15 @@ const product_17_imgage_01 = "https://site.tippytea.org/wp-content/uploads/2021/
 const product_18_imgage_01 = "https://site.tippytea.org/wp-content/uploads/2021/05/Sunshine-Lemon.png";
 const product_19_imgage_01 = "https://site.tippytea.org/wp-content/uploads/2021/05/Matcha-ceremonial-2.jpg";
 const product_20_imgage_01 = "https://site.tippytea.org/wp-content/uploads/2021/10/Culinario-4.jpg";
+const product_21_imgage_01 = "https://site.tippytea.org/wp-content/uploads/2021/05/Lapsang-Souchong-Butterfly.jpg";
+const product_22_imgage_01 = "https://site.tippytea.org/wp-content/uploads/2021/05/Keemun.png";
 
 
 
 const products = [
     {
         id: 1,
-        title: "TRÀ AZHARES",
+        title: "Trà Azhares",
         origin: "Mexico",
         price: 200,
         describe: "Trà đen hữu cơ, hoa Azhar và vỏ cam. Hương vị của hoa và mạch nha. Hương trái cây và cam quýt làm cho món trà chiều này trở nên hoàn hảo.",
@@ -35,7 +37,7 @@ const products = [
 
     {
         id: 2,
-        title: "TRÀ THẢO DƯỢC VIỆT QUẤT TÁO",
+        title: "Trà thảo dược việt quất táo",
         origin: "USA",
         price: 180,
         describe: "Táo khô lát, cánh hoa dâm bụt và dầu việt quất",
@@ -46,7 +48,7 @@ const products = [
 
     {
         id: 3,
-        title: "TRÀ QUẢ MỌNG",
+        title: "Trà quả mọng",
         origin: "Canada",
         price: 160,
         describe: "Hương vị anh đào và quả mọng ngọt ngào. Tuyệt vời để thưởng thức nó nóng hoặc đá.",
@@ -56,7 +58,7 @@ const products = [
     },
     {
         id: 4,
-        title: "TRÀ Ô LONG NÚI CAO ALISHAN - ĐÀI LOAN",
+        title: "TRà Ô long núi cao Alishan - Đài Loan",
         origin: "Đài Loan",
         price: 480,
         describe: "Lá trà phát triển chậm do độ cao, chúng hấp thụ độ cao và điều kiện đất đai độc đáo. Kết quả là, trà phát triển một hương vị đất phong phú đặc biệt, màu hổ phách vàng sáng và đặc tính tinh tế. Bạn sẽ được trải nghiệm một hương vị thanh thoát, mềm mại và thơm ngát mà không bị đắng.",
@@ -66,7 +68,7 @@ const products = [
     },
     {
         id: 5,
-        title: "TRÀ BLACK MANGO",
+        title: "Trà Black Mango",
         origin: "Ấn Độ",
         price: 180,
         describe: "Trà đen hữu cơ Keemun kết hợp với xoài! Sự kết hợp hoàn hảo!",
@@ -76,7 +78,7 @@ const products = [
     },
     {
         id: 6,
-        title: "TRÀ BLACK PEACH",
+        title: "Trà Black Peach",
         origin: "Ấn Độ",
         price: 180,
         describe: "Trà đen hữu cơ kết hợp đào! Sự kết hợp tinh tế và tươi mát!",
@@ -86,7 +88,7 @@ const products = [
     },
     {
         id: 7,
-        title: "TRÀ RỒNG 4 HOA - TRÀ XANH THỦ CÔNG",
+        title: "Trà Rồng 4 hoa - Trà xanh thủ công",
         origin: "Trung Quốc",
         price: 480,
         describe: "Trà xanh ấn tượng được lựa chọn đặc biệt được làm sống động với hương hoa nhài tinh tế. Trà có hoa dền, hoa nhài, hoa cúc và hoa oải hương.",
@@ -96,7 +98,7 @@ const products = [
     },
     {
         id: 8,
-        title: "TRÀ HOA ĐẬU BIẾC",
+        title: "Trà hoa đậu biếc",
         origin: "Thái Lan",
         price: 420,
         describe: "Trà hoa đậu biếc là một loài hoa Clitoria ternatea, tiếng Tây Ban Nha gọi là Conchita azul.",
@@ -106,7 +108,7 @@ const products = [
     },
     {
         id: 9,
-        title: "TRÀ THẢO DƯỢC CASABLANCA",
+        title: "Trà thảo dược Casablanca",
         origin: "Anh",
         price: 180,
         describe: "Táo, tầm xuân, chanh dây, mâm xôi, dâu tây, kiwi lát, cơm cháy, dâm bụt, cánh hoa hướng dương.",
@@ -117,7 +119,7 @@ const products = [
 
     {
         id: 10,
-        title: "TRÀ HOA OẢI HƯƠNG VÀ HOA HỒNG",
+        title: "Trà hoa oải hương và hoa hồng",
         origin: "Địa TRung Hải",
         price: 180,
         describe: "Sự kết hợp tinh tế của Hoa cúc, Hoa oải hương và Hoa hồng với hương cuối là Rooibos.",
@@ -128,7 +130,7 @@ const products = [
 
     {
         id: 11,
-        title: "TRÀ XANH HOA HỒNG ANH ĐÀO",
+        title: "Trà xanh hoa hồng anh đào",
         origin: "Địa TRung Hải",
         price: 180,
         describe: "Trà xanh hữu cơ, cánh hoa hồng, quả Andean hữu cơ và nhựa thơm anh đào. \nSự pha trộn giữa trà xanh chất lượng cao có hương vị anh đào ngọt ngào và chút hương hoa hồng tinh tế, mang đến nét đặc trưng kỳ lạ tuyệt vời cho trà.",
@@ -139,7 +141,7 @@ const products = [
 
     {
         id: 12,
-        title: "TRÀ TRẮNG PAI MU TAN",
+        title: "Trà trắng Pai Mu Tan",
         origin: "Việt Nam",
         price: 180,
         describe: "Bạch trà có hai lá kén đầu tiên phủ đầy lông trắng và có màu hơi trắng. Nó được gọi là trà trắng do nụ có màu trắng.",
@@ -150,7 +152,7 @@ const products = [
 
     {
         id: 13,
-        title: "TRÀ ORIENTAL BEAUTY Ô LONG",
+        title: "Trà Oriential Beauty Ô long",
         origin: "Trung Quốc",
         price: 480,
         describe: "Vẻ đẹp phương Đông một loại trà ô long với nhiều tên gọi và câu chuyện. Bai Hao (White Tip) Oolong dịch là 'trà ô long đầu trắng' và là do số lượng nụ trắng cao được sử dụng để pha chế loại trà này.",
@@ -161,7 +163,7 @@ const products = [
 
     {
         id: 14,
-        title: "TRÀ ĐEN EARL GREY",
+        title: "Trà đen Earl Grey",
         origin: "Địa TRung Hải",
         price: 180,
         describe: "Trà đen hữu cơ với dầu cam bergamota. Một hương thơm báo trước một hương vị đáng kinh ngạc. Chúng tôi đã nói đi nói lại nhiều lần. Đây là Earl Grey tuyệt nhất tôi từng có trong đời!",
@@ -171,7 +173,7 @@ const products = [
     },
     {
         id: 15,
-        title: "TRÀ VANILLA CHAI",
+        title: "Trà Vanilla Chai",
         origin: "Ấn Độ",
         price: 180,
         describe: "Trà đen, gừng, bạch đậu khấu, quế, đinh hương, tiêu đen, tiêu ngọt, hoa hồi với một chút hương vani vùng Amazon. Vanila từ Amazon, với một chút gừng, được tạo điểm nhấn bởi kẹo bạch đậu khấu.",
@@ -181,7 +183,7 @@ const products = [
     },
     {
         id: 16,
-        title: "TRÀ Ô LONG NHO",
+        title: "Trà Ô long nho",
         origin: "Đài Loan",
         price: 180,
         describe: "Oloong kết hợp với nho chín đỏ.",
@@ -191,7 +193,7 @@ const products = [
     },
     {
         id: 17,
-        title: "TRÀ CHOCOLATE BẠC HÀ",
+        title: "Trà Chocolate bạc hà",
         origin: "Ấn độ",
         price: 180,
         describe: "Lá bạc hà, ngòi cacao và trà đen. Bạc hà tươi tuyệt đẹp kết hợp với hạt cacao và trà đen Keemun",
@@ -201,7 +203,7 @@ const products = [
     },
     {
         id: 18,
-        title: "TRÀ SUNSHINE LEMON",
+        title: "Trà Sunshine Lemon",
         origin: "Trung Quốc",
         price: 180,
         describe: "Rooibos, cánh hoa cúc vạn thọ và vỏ chanh. Nước chanh tiếp thêm sinh lực cho hương vị của Rooibos. Tuyệt vời với đá và trang trí bằng chanh.",
@@ -212,7 +214,7 @@ const products = [
 
     {
         id: 19,
-        title: "TRÀ MATCH CEREMONIAL GRADE",
+        title: "Trà Matcha Ceremonial Grade",
         origin: "Nhật Bản",
         price: 480,
         describe: "Trà Matcha - Đẳng cấp nghi lễ",
@@ -223,13 +225,33 @@ const products = [
 
     {
         id: 20,
-        title: "TRÀ MATCH CULINARY GRADE",
+        title: "Trà Matcha Culinary Grade",
         origin: "Nhật Bản",
         price: 280,
         describe: "Trà Matcha - Đẳng cấp nghi lễ",
         image01: product_20_imgage_01,
         categorySlug: "tra-matcha",
         slug: "tra-Matcha-Culinary-Grade",
+    },
+    {
+        id: 21,
+        title: "Trà Lapsang Souchong - Trà đen - Trung Quốc",
+        origin: "Trung Quốc",
+        price: 180,
+        describe: "Lapsang Souchong Butterfly - Trà đen - Trung Quốc",
+        image01: product_21_imgage_01,
+        categorySlug: "hong-tra",
+        slug: "tra-Lapsang-Souchong",
+    },
+    {
+        id: 22,
+        title: "Trà đen hữu cơ Keemun",
+        origin: "Trung Quốc",
+        price: 280,
+        describe: "Trà Keemun là một trong những loại trà đen nổi tiếng nhất của Trung Quốc. Đặc trưng bởi hương thơm cay nồng cùng hương vị của rượu và trái cây, lý tưởng cho tất cả những ai đang tìm kiếm trải nghiệm mới về trà.",
+        image01: product_22_imgage_01,
+        categorySlug: "hong-tra",
+        slug: "tra-den-huu-co-keemun",
     },
 ];
 

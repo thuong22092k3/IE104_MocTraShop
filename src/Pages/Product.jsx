@@ -31,7 +31,7 @@ const Product = () => {
               {category.display}
             </Link>
           </Breadcrumb.Item>
-          <Breadcrumb.Item>{product.title}</Breadcrumb.Item>
+          <Breadcrumb.Item>{product.title.toUpperCase()}</Breadcrumb.Item>
         </Breadcrumb>
       </div>
       <ProductSale product={product}/>
