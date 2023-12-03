@@ -144,3 +144,17 @@ export {
     default as Payment_mastercard_dark_large
 } from './Images/Payment_mastercard-dark-large.jpg'
 
+
+/**
+ * Blog
+ */
+
+export {
+    default as Blog_1
+} from './Images/Blog_1.jpg'
+export {
+    default as Blog_2
+} from './Images/Blog_2.jpg'
+export {
+    default as Blog_3
+} from './Images/Blog_3.jpg'

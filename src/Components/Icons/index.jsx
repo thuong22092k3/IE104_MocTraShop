@@ -2,6 +2,7 @@ import {
     IoBagHandleOutline,
     IoCafeOutline,
     IoMenu,
+    IoCalendarClear,
 } from "react-icons/io5";
 import {
     MdOutlinePersonOutline,
@@ -35,6 +36,8 @@ import {
 
 import {
     FaCircle,
+    FaTag,
+    FaUserAlt,
 } from "react-icons/fa";
 
 
@@ -100,6 +103,15 @@ const EcoIcon = () => {
 const ArrowRightIcon = () => {
     return <MdKeyboardArrowRight size={22} />;
 };
+const CalendarIcon = () => {
+    return <IoCalendarClear size={22} />;
+};
+const TagIcon = () => {
+    return <FaTag size={22} />;
+};
+const UserIcon = () => {
+    return <FaUserAlt size={22} />;
+};
 
 export {
     BagIcon,
@@ -121,4 +133,7 @@ export {
     LanguageIcon, 
     EcoIcon,
     ArrowRightIcon,
+    CalendarIcon,
+    TagIcon,
+    UserIcon,
 };
