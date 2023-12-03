@@ -104,13 +104,13 @@ const ArrowRightIcon = () => {
     return <MdKeyboardArrowRight size={22} />;
 };
 const CalendarIcon = () => {
-    return <IoCalendarClear size={22} />;
+    return <IoCalendarClear size={20} />;
 };
 const TagIcon = () => {
-    return <FaTag size={22} />;
+    return <FaTag size={20} />;
 };
 const UserIcon = () => {
-    return <FaUserAlt size={22} />;
+    return <FaUserAlt size={20} />;
 };
 
 export {
