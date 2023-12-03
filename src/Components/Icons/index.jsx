@@ -3,6 +3,7 @@ import {
     IoCafeOutline,
     IoMenu,
     IoCalendarClear,
+    IoCloseOutline,
 } from "react-icons/io5";
 import {
     MdOutlinePersonOutline,
@@ -112,6 +113,9 @@ const TagIcon = () => {
 const UserIcon = () => {
     return <FaUserAlt size={20} />;
 };
+const CloseIcon = () => {
+    return <IoCloseOutline size={40} />;
+};
 
 export {
     BagIcon,
@@ -136,4 +140,5 @@ export {
     CalendarIcon,
     TagIcon,
     UserIcon,
+    CloseIcon,
 };

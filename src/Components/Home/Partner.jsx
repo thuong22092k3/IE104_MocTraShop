@@ -16,7 +16,7 @@ const Partner = () => {
           <button class="partner__btn">TƯ VẤN MIỄN PHÍ</button>
         </Link>
       </div>
-      <div>
+      <div> 
         <img src={Landing_Second_Image} alt="" />
       </div>
     </div>

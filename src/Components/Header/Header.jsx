@@ -2,11 +2,20 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { BagIcon, SearchIcon, AccountIcon, MenuIcon } from "../Icons/index.jsx";
+import SearchBar from "./SearchBar.jsx"
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+  };
+  const [searchVisible, setSearchVisible] = useState(false);
+  const openSearchBar = () => {
+    setSearchVisible(true);
+  };
+
+  const closeSearchBar = () => {
+    setSearchVisible(false);
   };
   return (
     <header className="header">
@@ -40,9 +49,9 @@ const Header = () => {
         </nav>
         <div className="icons">
           <div className="search-icon">
-            <NavLink to="/search" activeClassName="active">
-              <SearchIcon />
-            </NavLink>
+          <div onClick={openSearchBar} activeClassName="active">
+            <SearchIcon />
+          </div>
           </div>
           <div className="account-icon">
             <NavLink to="/account" activeClassName="active">
@@ -59,6 +68,11 @@ const Header = () => {
           </div>
         </div>
       </div>
+      {searchVisible && (
+        <div className="overlay">
+          <SearchBar onClose={closeSearchBar} />
+        </div>
+      )}
     </header>
   );
 };
