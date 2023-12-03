@@ -18,11 +18,11 @@ const Blog_Content = () => {
 
   const paginate = (pageNumber) => {
     setCurrentPage(parseInt(pageNumber, 10));
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <div className="blog">
-      <h1 className="blog__title">Blog</h1>
+      {/* <h1 className="blog__title">Blog</h1> */}
       {currentBlogs.map((blog, index) => (
         <Card_Blog key={index} blog={blog} />
       ))}

@@ -4,11 +4,11 @@ import Collections from "../Pages/Collections";
 import MyBag from "../Pages/Mybag";
 import Account from "../Pages/Account";
 import Product from "../Pages/Product";
-import CartSidebar from "../Components/Header/CartSidebar";
 import Signup from "../Pages/Signup";
 import Delivery from "../Pages/Delivery";
 import Payment from "../Pages/Payment";
 import Blog from "../Pages/Blog";
+import Accessories from "../Pages/Accessories"
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/Collections", component: Collections },
@@ -21,6 +21,7 @@ const publicRoutes = [
   { path: "/Delivery", component: Delivery },
   { path: "/Payment", component: Payment },
   { path: "/Blog", component: Blog },
+  { path: "/Accessories", component: Accessories },
 ];
 
 export { publicRoutes };
