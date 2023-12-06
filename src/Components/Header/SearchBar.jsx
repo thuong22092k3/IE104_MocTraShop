@@ -15,7 +15,7 @@ const SearchBar = ({ onClose }) => {
       </button>
       <div className="search__search_bar">
         <input type="text" placeholder="Search..." />
-        <SearchIcon/>
+        <SearchIcon />
       </div>
     </div>
   );

@@ -32,7 +32,7 @@ const CartSidebar = () => {
                             <span className="sale__info__components__quantity__number">{quantity}</span>
                             <span className="sale__info__components__quantity__plus" onClick={handleIncrement}>+</span>
                         </div>
-                        <p><span className="span_500">₫1000</span></p>
+                        <p><span className="span_500">₫{1000*quantity}.000</span></p>
                     </div>
 
                 </div>
@@ -41,16 +41,16 @@ const CartSidebar = () => {
                 <hr />
                 <div className="cartSidebar__total__payment">
                     <p>Tổng tiền</p>
-                    <p> ₫1000</p>
+                    <p> ₫{1000*quantity}000</p>
                 </div>
                 <div className="cartSidebar__total__payment">
                     <p>Giao hàng</p>
-                    <p> ₫1000</p>
+                    <p> ₫30.000</p>
                 </div>
                 <hr />
                 <div className="cartSidebar__total__payment">
                     <p>Thành tiền</p>
-                    <p> ₫2000</p>
+                    <p> ₫{1000*quantity+30000}.000</p>
                 </div>
                 <Link to="/Delivery">
                     <button className="cartSidebar__total__button">
