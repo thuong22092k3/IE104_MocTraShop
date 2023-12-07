@@ -1,0 +1,71 @@
+.card_blog {
+    width: 55%;
+    margin-bottom: 50px;
+
+    &__img {
+        margin-bottom: 10px;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__infos {
+        display: flex;
+        gap: 50px;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &__info {
+            display: flex;
+            color: $txt-third-color;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__title {
+        h1 {
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        button {
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+
+            a {
+                text-decoration: underline;
+                font-size: 16px;
+                font-weight: 400;
+                color: $txt-main-color;
+            }
+            :hover{
+                color: $hover-color;
+            }
+            :active{
+                color: $txt-third-color;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        &__infos {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap:10px;
+        }
+    }
+}

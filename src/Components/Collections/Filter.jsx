@@ -10,7 +10,6 @@ const Filter = () => {
     const checkList5 = ["Không Caffeine", "Caffeine thấp", "Caffeine trung bình", "Caffeine cao"];
     const checkList6 = ["Không Lactose", "Không Gluten", "Không hạt ", "Không đậu nành "];
 
-
     const [showFilter1, setShowFilter1] = useState(false);
     const [showFilter2, setShowFilter2] = useState(false);
     const [showFilter3, setShowFilter3] = useState(false);
