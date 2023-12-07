@@ -112,7 +112,9 @@ const Payment_Successful_Content = () => {
                         </div>
                     </div>
                     <div class="paymentsuccessful__content__right__button">
-                        <button class="button1">TIẾP TỤC MUA SẮM</button> <br />
+                        <a href="/Collections">
+                            <button class="button1">TIẾP TỤC MUA SẮM</button> <br />
+                        </a>
                         <button class="button2">IN BIÊN LAI</button>
                     </div>
                 </div>
