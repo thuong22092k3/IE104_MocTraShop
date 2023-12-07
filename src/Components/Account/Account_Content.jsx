@@ -55,7 +55,9 @@ const Account_Content = () => {
                         </div>
                         <div class="account__content__right__pay__button">
                             <div>
-                                <button>THANH TOÁN VỚI TƯ CÁCH KHÁCH HÀNG</button>
+                                <a href="/Mybag">
+                                    <button>THANH TOÁN VỚI TƯ CÁCH KHÁCH HÀNG</button>
+                                </a>
                             </div>
                         </div>
                     </div>

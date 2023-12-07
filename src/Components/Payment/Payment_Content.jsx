@@ -90,7 +90,7 @@ const Payment_Content = () => {
                     </div>
                     <div class="button">
                         <div>
-                            <a href="/Payment">
+                            <a href="/Payment_Successful">
                                 <button >
                                     <p>THANH TOÁN</p>
                                 </button>
