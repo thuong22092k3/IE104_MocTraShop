@@ -19,7 +19,7 @@ const Account_Content = () => {
                             <div>
                                 <input type="checkbox" /> Nhớ tài khoản
                             </div>
-                            <a href="">Quên mật khẩu?</a>
+                            <a href="/Forgot_Password">Quên mật khẩu?</a>
 
                         </div>
                         <div class="account__content__left__form__box">

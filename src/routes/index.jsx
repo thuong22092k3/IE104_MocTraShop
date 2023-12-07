@@ -9,6 +9,7 @@ import Delivery from "../Pages/Delivery";
 import Payment from "../Pages/Payment";
 import Blog from "../Pages/Blog";
 import Accessories from "../Pages/Accessories"
+import Forgot_Password from "../Pages/Forgot_Password";
 const publicRoutes = [
   { path: "/", component: Home },
   { path: "/Collections", component: Collections },
@@ -20,6 +21,7 @@ const publicRoutes = [
   { path: "/Signup", component: Signup },
   { path: "/Delivery", component: Delivery },
   { path: "/Payment", component: Payment },
+  { path: "/Forgot_Password", component: Forgot_Password },
   { path: "/Blog", component: Blog },
   { path: "/Accessories", component: Accessories },
 ];
