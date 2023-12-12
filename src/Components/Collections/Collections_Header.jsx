@@ -1,7 +1,5 @@
 import React from 'react'
-import { Link, useParams } from "react-router-dom";
-import { Breadcrumb, Input, Button } from "antd";
-import { BannerCate_Tra,  Collections_Banner } from '../../assets/Images';
+import { BannerCate_Tra} from '../../assets/Images';
 
 const Collections_Header = () => {
     return (

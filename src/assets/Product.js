@@ -281,8 +281,8 @@ const products = [
     price: 480,
     describe: "Trà Matcha - Đẳng cấp nghi lễ",
     image01: product_19_imgage_01,
-    categorySlug: "tra-matcha",
-    slug: "tra-Matcha-Ceremonial-Grade",
+    categorySlug: "matcha",
+    slug: "tra-Ceremonial-Grade",
   },
 
   {
@@ -292,8 +292,8 @@ const products = [
     price: 280,
     describe: "Trà Matcha - Đẳng cấp nghi lễ",
     image01: product_20_imgage_01,
-    categorySlug: "tra-matcha",
-    slug: "tra-Matcha-Culinary-Grade",
+    categorySlug: "matcha",
+    slug: "tra-Culinary-Grade",
   },
   {
     id: 21,

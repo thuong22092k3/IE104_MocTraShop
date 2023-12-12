@@ -1,5 +1,4 @@
 import React from 'react'
-// import '../../sass/Components/Footer.scss'
 import { EmailIcon, LocationIcon, PhoneIcon } from '../Icons'
 
 const Footer = () => {

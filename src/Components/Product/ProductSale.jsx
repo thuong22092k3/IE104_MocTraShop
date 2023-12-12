@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import {
-  Product_Sale1,
   Bag_50g,
   Bag_100g,
   Bag_170g,

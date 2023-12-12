@@ -1,12 +1,9 @@
 import React, { useState } from 'react'
 import {
     Payment_Visa,
-    Payment_advance,
-    Payment_maestro_dark_large,
     Payment_mastercard_dark_large,
     Payment_momo,
 } from '../../assets/Images'
-import { ArrowRightIcon } from '../Icons';
 const Payment_Content = () => {
 
     return (

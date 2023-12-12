@@ -25,7 +25,8 @@
 
     &__content {
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 49% 49%;
+        gap: 2%;
         height: 500px;
         margin-top: 3em;
 
@@ -80,6 +81,7 @@
             &__info {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+                gap:50px;
 
                 .p1 {
                     font-weight: 500;

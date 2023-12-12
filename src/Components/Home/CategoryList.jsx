@@ -18,8 +18,8 @@ const CatergoryList = () => {
                     {row.map((category) => (
                         <Link to={`/collections/${category.categorySlug}`} key={category.id}>
                             <div className="card">
-                                <img src={category.image} alt={category.display} />
-                                <div className='card__title'>{category.display}</div>
+                                <img src={category.image} alt={category?.display} />
+                                <div className='card__title'>{category?.display}</div>
                             </div>
                         </Link>
                     ))}

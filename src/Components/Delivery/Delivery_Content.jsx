@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { ArrowRightIcon } from '../Icons';
+import React from 'react'
 const Delivery_Content = () => {
 
     return (

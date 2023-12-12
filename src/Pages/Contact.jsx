@@ -3,11 +3,10 @@ import Helmet from "../Components/Helmet";
 import { Link } from "react-router-dom";
 import { Breadcrumb } from "antd";
 import { BannerCate_Tra } from "../assets/Images";
-import Section, { SectionBody, SectionTitle } from "../Components/Section";
 import Contact_Content from "../Components/Contact/Contact_Content";
 const Contact = () => {
   return (
-    <Helmet title="Trang chủ">
+    <Helmet title="Liên hệ">
       <div className="collections_header">
         <img src={BannerCate_Tra} alt="" />
         <div className="breadcrumb">
@@ -20,11 +19,7 @@ const Contact = () => {
           </Breadcrumb>
         </div>
       </div>
-      <Section>
-        <SectionBody>
-          <Contact_Content></Contact_Content>
-        </SectionBody>
-      </Section>
+      <Contact_Content></Contact_Content>
     </Helmet>
   );
 };

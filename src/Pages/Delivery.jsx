@@ -1,20 +1,16 @@
-import React from 'react'
+import React from "react";
 import Helmet from "../Components/Helmet";
-import Stepper from 'react-stepper-horizontal';
-import { Link } from "react-router-dom";
-import { Breadcrumb } from "antd";
-import { BannerCate_Tra } from "../assets/Images";
-import Section, { SectionBody, SectionTitle } from "../Components/Section";
-import Delivery_Content from '../Components/Delivery/Delivery_Content';
+import Stepper from "react-stepper-horizontal";
+import Delivery_Content from "../Components/Delivery/Delivery_Content";
 const Delivery = () => {
   const steps = [
-    { title: 'GIỎ HÀNG' },
-    { title: 'GIAO HÀNG' },
-    { title: 'ĐÁNH GIÁ VÀ THANH TOÁN' },
+    { title: "GIỎ HÀNG" },
+    { title: "GIAO HÀNG" },
+    { title: "ĐÁNH GIÁ VÀ THANH TOÁN" },
   ];
   const activeStep = 1;
   return (
-    <Helmet title="Trang chủ">
+    <Helmet title="Giao hàng">
       <div class="delivery__header">
         <Stepper
           steps={steps}
@@ -23,13 +19,9 @@ const Delivery = () => {
           activeTitleColor="#BC575F"
         />
       </div>
-      <Section>
-        <SectionBody>
-          <Delivery_Content></Delivery_Content>
-        </SectionBody>
-      </Section>
+      <Delivery_Content></Delivery_Content>
     </Helmet>
-  )
-}
+  );
+};
 
-export default Delivery
+export default Delivery;

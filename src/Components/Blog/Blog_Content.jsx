@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { UserIcon, CalendarIcon, TagIcon } from "../Icons";
-import { Blog_1, Blog_2, Blog_3 } from "../../assets/Images";
 import Card_Blog from "../Blog/Card_Blog";
 import blogData from "../../assets/Review";
 
@@ -11,7 +9,7 @@ const Blog_Content = () => {
   useEffect(() => {
     const allBlogs = blogData.getAllBlogs();
     setBlogs(allBlogs);
-  });
+  }, []);
   const indexOfLastBlog = currentPage * blogsPerPage;
   const indexOfFirstBlog = indexOfLastBlog - blogsPerPage;
   const currentBlogs = blogs.slice(indexOfFirstBlog, indexOfLastBlog);
@@ -22,7 +20,6 @@ const Blog_Content = () => {
   };
   return (
     <div className="blog">
-      {/* <h1 className="blog__title">Blog</h1> */}
       {currentBlogs.map((blog, index) => (
         <Card_Blog key={index} blog={blog} />
       ))}

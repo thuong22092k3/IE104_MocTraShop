@@ -1,10 +1,8 @@
-// SearchBar.jsx
 import React from "react";
 import { CloseIcon, SearchIcon } from "../Icons/index";
 
 const SearchBar = ({ onClose }) => {
   const handleOverlayClick = (e) => {
-    // Prevent the event from propagating to the overlay
     e.stopPropagation();
   };
 

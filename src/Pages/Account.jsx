@@ -1,20 +1,15 @@
-import React from 'react'
+import React from "react";
 import Helmet from "../Components/Helmet";
-import { Link} from "react-router-dom";
-import { Breadcrumb} from "antd";
-import {BannerCate_Tra} from"../assets/Images";
-import Section, { SectionBody, SectionTitle } from "../Components/Section";
-import Account_Content from '../Components/Account/Account_Content';
+import Account_Content from "../Components/Account/Account_Content";
+import { Link } from "react-router-dom";
+import { Breadcrumb } from "antd";
+
 const Account = () => {
   return (
-    <Helmet title="Trang chủ">
-      <Section>
-        <SectionBody>
-          <Account_Content></Account_Content>
-        </SectionBody>
-      </Section>
+    <Helmet title="Tài khoản">
+      <Account_Content></Account_Content>
     </Helmet>
-  )
-}
+  );
+};
 
-export default Account
+export default Account;

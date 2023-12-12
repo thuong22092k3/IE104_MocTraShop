@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import {useParams } from 'react-router-dom';
 import Filter from './Filter';
 import productData from '../../assets/Product';
-import categoryData from '../../assets/Category';
 import Card from './Card';
 
 const Collections_Content = () => {

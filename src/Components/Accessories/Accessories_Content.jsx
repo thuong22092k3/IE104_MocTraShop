@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
 import Card from "../Collections/Card";
 import productData from "../../assets/Product";
 
 const Accessories_Content = () => {
   const [products, setProducts] = useState([]);
-  const { categorySlug } = useParams();
   useEffect(() => {
     const allProducts = productData.getProductsByCateSlug("dung-cu-pha-tra");
     setProducts(allProducts);

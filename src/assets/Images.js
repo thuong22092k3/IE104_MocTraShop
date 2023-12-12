@@ -149,16 +149,6 @@ export {
  * Blog
  */
 
-// export {
-//     default as Blog_1
-// } from './Images/Blog_1.jpg'
-// export {
-//     default as Blog_2
-// } from './Images/Blog_2.jpg'
-// export {
-//     default as Blog_3
-// } from './Images/Blog_3.jpg'
-
 const Blog_1 ="https://www.traviet.com/wp-content/uploads/2021/08/IMG_0097.jpeg"
 const Blog_2 ="https://www.traviet.com/wp-content/uploads/2017/04/tra-gung-4-1536x1024.jpg.webp"
 const Blog_3 ="https://lh4.googleusercontent.com/oOP7T9ZrRCQzwCzgTtOZHZgnH2p9MT4ddOAMKhNjrB8uhs1JvXQ4UkA4G59BWts7pHg2p-u4jlPgrkBvGkGGrWbT3_2XeUywg_p1v1FK3HkhHvdK50onv493oW8RCDM6CRtFPNtT"
@@ -167,3 +157,13 @@ export {
     Blog_2,
     Blog_3,
 }
+
+/**
+ * Logo
+ */
+
+export {
+    default as Logo
+} from './Images/Logo_1.jpg'
+
+

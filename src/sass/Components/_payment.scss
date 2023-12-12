@@ -1,7 +1,8 @@
 .payment {
     &__content {
         display: grid;
-        grid-template-columns: 24% 34% 39%;
+        grid-template-columns: 23% 33% 38%;
+        gap: 2%;
         margin: 2em 3em;
         justify-content: space-between;
 

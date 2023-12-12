@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { BagIcon, SearchIcon, AccountIcon, MenuIcon } from "../Icons/index.jsx";
 import SearchBar from "./SearchBar.jsx"
+import {Logo} from "../../assets/Images"
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -21,7 +22,7 @@ const Header = () => {
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <Link to="/">BrandName</Link>
+          <Link to="/"><img src={Logo} alt="" /></Link>
         </div>
         <nav className={`navbar ${menuOpen ? "open" : ""}`}>
           <ul>
