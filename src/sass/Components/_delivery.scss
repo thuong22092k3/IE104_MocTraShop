@@ -60,6 +60,7 @@
                 }
 
                 button {
+                    cursor: pointer;
                     width: 100%;
                     color: white;
                     background-color: black;
@@ -71,15 +72,11 @@
                         background-color: white;
                         color: black;
                     }
-<<<<<<< HEAD
 
                     &:active {
                         color: white;
                         background-color: black;
                     }
-=======
-                    cursor: pointer;
->>>>>>> e2bcae475979808066bd3f41b46648c85ec5f1a7
                 }
             }
         }
