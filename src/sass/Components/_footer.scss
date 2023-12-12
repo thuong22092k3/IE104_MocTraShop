@@ -28,6 +28,7 @@
           font-size: 14px;
           
           li {
+            cursor: pointer;
             display: flex;
             justify-content: start;
             margin-bottom: 15px;
@@ -35,6 +36,11 @@
             i {
               margin-right: 8px;
             }
+            
+          }
+          :hover{
+            text-decoration: underline;
+            color: $hover-color;
           }
         }
       }
