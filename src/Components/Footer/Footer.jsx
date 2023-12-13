@@ -21,8 +21,8 @@ const Footer = () => {
         <div className="footer-column">
           <p>GIỚI THIỆU</p>
           <ul>
-            <li>Giới Thiệu về BrandName</li>
-            <li>Giới Thiệu về Trà của BrandName</li>
+            <li>Giới Thiệu về MocTra</li>
+            <li>Giới Thiệu về Trà của MocTra</li>
             <li>Học Viện Trà</li>
           </ul>
         </div>
