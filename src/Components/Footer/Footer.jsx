@@ -1,5 +1,5 @@
-import React from 'react'
-import { EmailIcon, LocationIcon, PhoneIcon } from '../Icons'
+import React from "react";
+import { EmailIcon, LocationIcon, PhoneIcon } from "../Icons";
 
 const Footer = () => {
   return (
@@ -39,24 +39,28 @@ const Footer = () => {
           <p>LIÊN HỆ</p>
           <ul>
             <li>
-              <i><LocationIcon /></i>
-              3 Falahi, Falahi St, Pasdaran Ave,<br /> Shiraz, Fars Provieencebr <br />
-              Iran
+              <i>
+                <LocationIcon />
+              </i>
+              KTX khu A, Đ.Tạ Quang Bửu, P. Linh Trung, TP. Thủ Đức, TP. HCM
             </li>
             <li>
-              <i><EmailIcon /></i>
-              Email: amoopur@gmail.com
+              <i>
+                <EmailIcon />
+              </i>
+              Email: 21521140@gm.uit.edu.vn / 21521509@gm.uit.edu.vn
             </li>
             <li>
-              <i><PhoneIcon /></i>
-              Tel: +98 9173038406 
+              <i>
+                <PhoneIcon />
+              </i>
+              Tel: 0764225752
             </li>
           </ul>
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
-
+export default Footer;

@@ -108,7 +108,7 @@ const products = [
   },
   {
     id: 4,
-    title: "TRà Ô long núi cao Alishan",
+    title: "Trà Ô long núi cao Alishan",
     origin: "Đài Loan",
     price: 480,
     describe:
@@ -139,7 +139,7 @@ const products = [
   },
   {
     id: 7,
-    title: "Trà Rồng 4 hoa",
+    title: "Trà hoa Tứ Long",
     origin: "Trung Quốc",
     price: 480,
     describe:
