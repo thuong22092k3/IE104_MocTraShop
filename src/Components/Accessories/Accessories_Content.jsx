@@ -12,7 +12,7 @@ const Accessories_Content = () => {
     <div className="accessories">
       <div className="collections__products__list">
         {products.map((product, index) => (
-          <Card item={product} key={index} />
+          <Card item={product} key={index}/>
         ))}
       </div>
     </div>
