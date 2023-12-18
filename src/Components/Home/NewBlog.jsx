@@ -36,6 +36,16 @@ const slides = [
         title: 'Trà Xanh: Trà Xanh Là Gì, 15 Tác Dụng & Những Ai Không Nên Uống Trà Xanh',
         content: 'Trà xanh hay chè xanh là loại thực phầm được dùng để ngâm với nước sôi lấy nước uống. Uống trà xanh rất tốt cho sức khỏe, giúp ngăn ngừa nguy cơ mắc các bệnh nguy hiểm. Lưu ý không phải cũng có thể dùng được trà xanh. ',
     },
+    {
+        imgSrc: New_Blog_Image_2,
+        title: 'Sự thật về hương trà',
+        content: 'Loại trà sẽ ảnh hưởng đến hương trà. Trà xanh thường có hương tươi mát, trà đen có hương đậm đà và ngọt ngào, trong khi trà oolong có mùi hoa quả và hoa cỏ.',
+    },
+    {
+        imgSrc: New_Blog_Image_3,
+        title: 'Trà Xanh: Trà Xanh Là Gì, 15 Tác Dụng & Những Ai Không Nên Uống Trà Xanh',
+        content: 'Trà xanh hay chè xanh là loại thực phầm được dùng để ngâm với nước sôi lấy nước uống. Uống trà xanh rất tốt cho sức khỏe, giúp ngăn ngừa nguy cơ mắc các bệnh nguy hiểm. Lưu ý không phải cũng có thể dùng được trà xanh. ',
+    },
 ];
 
 const NewBlog = () => {

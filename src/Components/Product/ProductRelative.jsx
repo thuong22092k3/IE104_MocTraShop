@@ -2,25 +2,35 @@ import React, { useState, useEffect } from "react";
 import productData from "../../assets/Product";
 import { useParams } from "react-router-dom";
 import Card from "../Collections/Card";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ProductRelative = () => {
   const [products, setProducts] = useState([]);
-  const { categorySlug } = useParams();
   useEffect(() => {
-    const randomProducts = productData.getProducts(3);
-    // const filteredProducts = randomProducts.filter(
-    //   (product) => product.categorySlug === categorySlug
-    // ).slice(0, 3);  
+    const randomProducts = productData.getProducts(5);
     setProducts(randomProducts);
-  }, [categorySlug]);
+  }, []);
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
   return (
     <div className="relative">
       <h1 className="relative__h1">Sản phẩm tương tự</h1>
       <div className="relative__list">
-        {products.map((product) => (
-          <Card item={product} />
-        ))}
+        <Slider {...sliderSettings}>
+          {products.map((product) => (
+            <Card key={product.id} item={product} />
+          ))}
+        </Slider>
       </div>
     </div>
   );
