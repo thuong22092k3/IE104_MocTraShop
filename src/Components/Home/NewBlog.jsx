@@ -20,7 +20,6 @@ const sliderSettings = {
     ],
 };
 
-
 const slides = [
     {
         imgSrc: New_Blog_Image_1,

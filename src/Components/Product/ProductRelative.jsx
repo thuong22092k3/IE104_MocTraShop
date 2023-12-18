@@ -7,11 +7,11 @@ const ProductRelative = () => {
   const [products, setProducts] = useState([]);
   const { categorySlug } = useParams();
   useEffect(() => {
-    const randomProducts = productData.getAllProducts();
-    const filteredProducts = randomProducts.filter(
-      (product) => product.categorySlug === categorySlug
-    ).slice(0, 3);  
-    setProducts(filteredProducts);
+    const randomProducts = productData.getProducts(3);
+    // const filteredProducts = randomProducts.filter(
+    //   (product) => product.categorySlug === categorySlug
+    // ).slice(0, 3);  
+    setProducts(randomProducts);
   }, [categorySlug]);
 
   return (
