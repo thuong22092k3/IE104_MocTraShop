@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from 'react';
-import productData from '../../assets/Product';
-import Card from '../Collections/Card';
+import React, { useState, useEffect } from "react";
+import productData from "../../assets/Product";
+import { useParams } from "react-router-dom";
+import Card from "../Collections/Card";
 
 const ProductRelative = () => {
   const [products, setProducts] = useState([]);
-
+  const { categorySlug } = useParams();
   useEffect(() => {
-    const randomProducts = productData.getProducts(3);
-    setProducts(randomProducts);
-  }, []);
+    const randomProducts = productData.getAllProducts();
+    const filteredProducts = randomProducts.filter(
+      (product) => product.categorySlug === categorySlug
+    ).slice(0, 3);  
+    setProducts(filteredProducts);
+  }, [categorySlug]);
 
   return (
     <div className="relative">
-      <h1 className="relative__h1">
-        Sản phẩm tương tự
-      </h1>
+      <h1 className="relative__h1">Sản phẩm tương tự</h1>
       <div className="relative__list">
         {products.map((product) => (
           <Card item={product} />
@@ -22,6 +24,6 @@ const ProductRelative = () => {
       </div>
     </div>
   );
-}
+};
 
 export default ProductRelative;

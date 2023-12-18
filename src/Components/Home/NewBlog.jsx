@@ -12,9 +12,9 @@ const sliderSettings = {
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 768, // Adjust this breakpoint as needed
+            breakpoint: 768, 
             settings: {
-                slidesToShow: 1, // Change the number of slides to 1 on smaller screens
+                slidesToShow: 1, 
             },
         },
     ],
